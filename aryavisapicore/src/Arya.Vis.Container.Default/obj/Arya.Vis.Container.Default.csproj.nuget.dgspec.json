@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Container.Default\\Arya.Vis.Container.Default.csproj": {}
+  },
+  "projects": {
+    "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Container.Default\\Arya.Vis.Container.Default.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Container.Default\\Arya.Vis.Container.Default.csproj",
+        "projectName": "Arya.Vis.Container.Default",
+        "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Container.Default\\Arya.Vis.Container.Default.csproj",
+        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
+        "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Container.Default\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Repository\\Arya.Vis.Repository.csproj": {
+                "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Repository\\Arya.Vis.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "GraphQL.Server.Transports.AspNetCore": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "GraphQL.Server.Transports.WebSockets": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
+        "projectName": "Arya.Vis.Core",
+        "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
+        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
+        "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Mailkit": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Repository\\Arya.Vis.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Repository\\Arya.Vis.Repository.csproj",
+        "projectName": "Arya.Vis.Repository",
+        "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Repository\\Arya.Vis.Repository.csproj",
+        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
+        "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
+                "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

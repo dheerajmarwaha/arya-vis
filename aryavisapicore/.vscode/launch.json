@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug xunit tests",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "/usr/local/share/dotnet/dotnet",
+            "args": [
+              "exec",
+              "--runtimeconfig",
+              "${workspaceRoot}/AppNameHere/bin/Debug/netcoreapp1.0/AppNameHere.runtimeconfig.json",
+              "--depsfile",
+              "${workspaceRoot}/src/Arya.Vis.Gateway.EmailProvider/bin/Debug/netstandard2.0/Arya.Vis.Gateway.EmailProvider.deps.json",
+              "--additionalprobingpath",
+              "/Users/jdoe/.nuget/packages",
+              "/Users/jdoe/.nuget/packages/dotnet-test-xunit/1.0.0-rc2-build10015/lib/netcoreapp1.0/dotnet-test-xunit.dll",
+              "${workspaceRoot}/tests/Arya.Vis.Gateway.EmailProvider.Tests/bin/Debug/netcoreapp3.1/Arya.Vis.Gateway.EmailProvider.dll",
+              "-namespace",
+              "Tests"
+            ],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false
+          },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/tests/Arya.Vis.Gateway.EmailProvider.Tests/bin/Debug/netcoreapp3.1/Arya.Vis.Gateway.EmailProvider.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
