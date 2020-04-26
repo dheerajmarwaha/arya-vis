@@ -12,10 +12,21 @@ namespace Arya.Vis.Core.GraphQL.GraphQLQueries
     {
         public InterviewQuery(IInterviewService interviews)
         {
-            Name="Query";
+            Name = "Query";
+
+            Field<InterviewType>(
+                name: "interview",
+                arguments: new QueryArguments(new QueryArgument<IdGraphType> { Name = "interviewGuid", Description = "The Guid of the Interview." }),
+
+                resolve: context =>
+                {
+                    var interviewGuid = context.GetArgument<Guid>("interviewGuid");
+                    return interviews.GetInterviewAsync(interviewGuid);
+                });
+
             Field<ListGraphType<InterviewType>>(
-                name:"interviews",
-                resolve: context => interviews.GetJobsAsync()
+                name: "interviews",
+                resolve: context => interviews.GetInterviewAsync()
             );
         }
     }

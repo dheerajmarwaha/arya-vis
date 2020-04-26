@@ -58,6 +58,31 @@ namespace Arya.Vis.Core.Tests
             Assert.NotNull(interviews);
         }
 
-       
+
+        [Fact]
+        public async void GetInterview_WithVariable_VerifyContent_ShouldPass()
+        {
+            //Arrange
+            var request = new HttpRequestMessage(new HttpMethod("POST"), "/");
+            var graphQLQuery = @"{
+	                            ""Query"":""query interview($id:ID!){ interview(interviewGuid: $id) { 
+                                                    interviewGuid 
+                                                    interviewCode  
+                                                    interviewTitle 
+                                                    interviewOwnerGuid 
+                                                    interviewStartDate 
+                                                    interviewEndDate} } "",
+                                ""Variables"":{ ""id"":""725000ae-ba39-45a5-a10f-79e5b27fe747""}
+                                    }
+                            ";
+            //Act
+            var response = await testClient.PostAsync("/", new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
+
+            var content = await response.Content.ReadAsStringAsync();
+            var interviews = JsonConvert.DeserializeObject<Interview>(content);
+            //Assert
+            Assert.NotNull(interviews);
+        }
+
     }
 }

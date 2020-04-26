@@ -8,7 +8,7 @@ namespace Arya.Vis.Container.Default.Extensions
     public static class AryaVisRepositoriesExtension
     {
         public static IServiceCollection AddAryaVisRepositories(this IServiceCollection services, IConfiguration configuration) {
-            services.AddScoped<IInterviewRepository, InterviewRepository>();
+            services.AddSingleton<IInterviewRepository, InterviewRepository>();
 
             return services;
         }

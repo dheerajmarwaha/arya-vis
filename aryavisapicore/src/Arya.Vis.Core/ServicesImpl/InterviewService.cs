@@ -17,16 +17,16 @@ namespace Arya.Vis.Core.ServicesImpl
             _interviewRepositry = interviewRepositry;
         }
 
-         public Interview GetJob(Guid interviewGuid)
+         public Interview GetInterview(Guid interviewGuid)
         {
-            return GetJobAsync(interviewGuid).Result;
+            return GetInterviewAsync(interviewGuid).Result;
         }
 
-        public Task<Interview> GetJobAsync(Guid interviewGuid)
+        public Task<Interview> GetInterviewAsync(Guid interviewGuid)
         {
             return _interviewRepositry.GetInterviewAsync(interviewGuid);
         }
-        public Task<IEnumerable<Interview>> GetJobsAsync()
+        public Task<IEnumerable<Interview>> GetInterviewAsync()
         {
             return _interviewRepositry.GetInterviewsAsync();
         }

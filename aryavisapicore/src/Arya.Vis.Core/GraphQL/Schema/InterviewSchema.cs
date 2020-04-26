@@ -6,9 +6,10 @@ namespace Arya.Vis.Core.GraphQLSchema
 {
     public class InterviewSchema : Schema
     {
-        public InterviewSchema(InterviewQuery query, IDependencyResolver resolver)
+        public InterviewSchema(InterviewQuery query, InterviewMutation mutation, IDependencyResolver resolver)
         {
             Query = query;
+            Mutation = mutation;
             DependencyResolver = resolver;
         }
     }

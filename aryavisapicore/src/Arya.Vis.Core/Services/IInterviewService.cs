@@ -7,9 +7,9 @@ namespace Arya.Vis.Core.Services
 {
     public interface IInterviewService
     {
-        Interview GetJob(Guid interviewGuid);
-        Task<Interview> GetJobAsync(Guid interviewGuid);
-        Task<IEnumerable<Interview>>  GetJobsAsync();
+        Interview GetInterview(Guid interviewGuid);
+        Task<Interview> GetInterviewAsync(Guid interviewGuid);
+        Task<IEnumerable<Interview>>  GetInterviewAsync();
          Task<Interview> CreateAsync(Interview interview);
     }
 }
