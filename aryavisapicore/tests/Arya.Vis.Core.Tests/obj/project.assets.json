@@ -101,6 +101,18 @@
           "lib/netstandard2.0/GraphQL.Server.Transports.WebSockets.dll": {}
         }
       },
+      "GraphQL.Server.Ui.Playground/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll": {}
+        }
+      },
       "MailKit/2.6.0": {
         "type": "package",
         "dependencies": {
@@ -3109,6 +3121,7 @@
           "Arya.Vis.Core": "1.0.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
           "GraphQL.Server.Transports.WebSockets": "3.4.0",
+          "GraphQL.Server.Ui.Playground": "3.4.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2"
         },
         "compile": {
@@ -3276,6 +3289,18 @@
         "graphql.server.transports.websockets.3.4.0.nupkg.sha512",
         "graphql.server.transports.websockets.nuspec",
         "lib/netstandard2.0/GraphQL.Server.Transports.WebSockets.dll"
+      ]
+    },
+    "GraphQL.Server.Ui.Playground/3.4.0": {
+      "sha512": "jl9FP6zudM0fcQbv6LPbydJ27p2MeJInGBPZccReq6slXito82wIOrfyMIAcHx+5tY6Tm3w00kSkJzRCwK2aVA==",
+      "type": "package",
+      "path": "graphql.server.ui.playground/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "graphql.server.ui.playground.3.4.0.nupkg.sha512",
+        "graphql.server.ui.playground.nuspec",
+        "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll"
       ]
     },
     "MailKit/2.6.0": {

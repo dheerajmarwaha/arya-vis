@@ -9,6 +9,7 @@ using GraphQL;
 using GraphQL.Server;
 using GraphQL.Server.Transports.AspNetCore;
 using GraphQL.Server.Transports.WebSockets;
+using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -51,6 +52,8 @@ namespace Arya.Vis.Api {
         public void Configure (IApplicationBuilder app, IWebHostEnvironment env) {
             if (env.IsDevelopment ()) {
                 app.UseDeveloperExceptionPage ();
+
+                app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
             }
 
             app.UseHttpsRedirection ();
@@ -58,8 +61,8 @@ namespace Arya.Vis.Api {
             app.UseRouting ();
 
             app.UseWebSockets();
-            app.UseGraphQLWebSockets<InterviewSchema>("/");
-            app.UseGraphQL<InterviewSchema>("/");
+            app.UseGraphQLWebSockets<InterviewSchema>();
+            app.UseGraphQL<InterviewSchema>();
             
             app.UseAuthorization ();
 

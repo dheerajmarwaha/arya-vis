@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace Arya.Vis.Core.GraphQL.GraphQLQueries
 {
@@ -20,6 +21,7 @@ namespace Arya.Vis.Core.GraphQL.GraphQLQueries
 
                 resolve: context =>
                 {
+                    var user = (ClaimsPrincipal)context.UserContext;
                     var interviewGuid = context.GetArgument<Guid>("interviewGuid");
                     return interviews.GetInterviewAsync(interviewGuid);
                 });

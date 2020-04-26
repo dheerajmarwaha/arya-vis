@@ -64,7 +64,7 @@ namespace Arya.Vis.Core.Tests
 	                            }
                             }";
             //Act
-            var response = await testClient.PostAsync("/",new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
+            var response = await testClient.PostAsync("/graphql", new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
 			//Assert
 			var content = await response.Content.ReadAsStringAsync();
 			

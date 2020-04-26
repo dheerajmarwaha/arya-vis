@@ -1,11 +1,12 @@
 using Arya.Vis.Core.Entities;
+using GraphQL.DataLoader;
 using GraphQL.Types;
 
 namespace Arya.Vis.Core.GraphQL.GraphQLType
 {
     public class InterviewType : ObjectGraphType<Interview>
     {
-    public InterviewType()
+    public InterviewType(IDataLoaderContextAccessor dataLoaderAccessor)
     {
         Field(i => i.InterviewGuid, nullable: true, type: typeof(IdGraphType));
         Field(i => i.InterviewCode, nullable: true);

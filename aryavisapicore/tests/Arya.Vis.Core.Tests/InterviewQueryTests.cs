@@ -36,7 +36,7 @@ namespace Arya.Vis.Core.Tests
 	                            ""Query"":""{ interviews { interviewGuid interviewCode  interviewTitle interviewOwnerGuid interviewStartDate interviewEndDate} }""
                             }";
             //Act
-            var response = await testClient.PostAsync("/",new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
+            var response = await testClient.PostAsync("/graphql", new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
             //Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
@@ -50,7 +50,7 @@ namespace Arya.Vis.Core.Tests
 	                            ""Query"":""{ interviews { interviewGuid interviewCode  interviewTitle interviewOwnerGuid interviewStartDate interviewEndDate} }""
                             }";
             //Act
-            var response = await testClient.PostAsync("/", new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
+            var response = await testClient.PostAsync("/graphql", new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
 
             var content = await response.Content.ReadAsStringAsync();
             var interviews = JsonConvert.DeserializeObject<Interview>(content);
@@ -76,7 +76,7 @@ namespace Arya.Vis.Core.Tests
                                     }
                             ";
             //Act
-            var response = await testClient.PostAsync("/", new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
+            var response = await testClient.PostAsync("/graphql", new StringContent(graphQLQuery, Encoding.UTF8, "application/json"));
 
             var content = await response.Content.ReadAsStringAsync();
             var interviews = JsonConvert.DeserializeObject<Interview>(content);

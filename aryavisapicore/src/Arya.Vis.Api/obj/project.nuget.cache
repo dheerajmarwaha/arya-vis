@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J0ThjQSeBz6qDxjVFXQii452Jt3wBS3sOc4p0p/LnDpGRN/TTo1rkLcNlVt0Tihb4rrOhk7Wq0IMGRTpDsuaMg==",
+  "dgSpecHash": "EypWvBxOQTe/oob4FnGiJOWbOsKKe5KMFOr9tz98xu4Wh23lr7gCoQRiPtHXLXArky2kYUrwXW/XwOPEz0wiSQ==",
   "success": true,
   "projectFilePath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Api\\Arya.Vis.Api.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\dheer\\.nuget\\packages\\graphql.server.transports.aspnetcore\\3.4.0\\graphql.server.transports.aspnetcore.3.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql.server.transports.subscriptions.abstractions\\3.4.0\\graphql.server.transports.subscriptions.abstractions.3.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql.server.transports.websockets\\3.4.0\\graphql.server.transports.websockets.3.4.0.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\graphql.server.ui.playground\\3.4.0\\graphql.server.ui.playground.3.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\mailkit\\2.6.0\\mailkit.2.6.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.0.2\\microsoft.aspnetcore.hosting.abstractions.2.0.2.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.0.2\\microsoft.aspnetcore.hosting.server.abstractions.2.0.2.nupkg.sha512",

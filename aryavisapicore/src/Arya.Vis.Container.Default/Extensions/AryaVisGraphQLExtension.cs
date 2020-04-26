@@ -40,7 +40,9 @@ namespace Arya.Vis.Container.Default.Extensions
                 options.ExposeExceptions = environment.IsDevelopment();
             })
                 .AddWebSockets()
-                .AddDataLoader();
+                .AddUserContextBuilder(httpContext=> httpContext.User)
+                .AddDataLoader()
+                .AddGraphTypes(ServiceLifetime.Scoped);
             return services;
         }
     }

@@ -135,5 +135,6 @@ E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\ru\
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\GraphQL.Server.Ui.Playground.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.csproj.CoreCompileInputs.cache
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.MvcApplicationPartsAssemblyInfo.cache

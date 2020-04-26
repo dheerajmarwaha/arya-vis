@@ -218,3 +218,4 @@ E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcorea
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Vis.Core.pdb
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Vis.Repository.pdb
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\System.Reactive.xml
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\GraphQL.Server.Ui.Playground.dll
