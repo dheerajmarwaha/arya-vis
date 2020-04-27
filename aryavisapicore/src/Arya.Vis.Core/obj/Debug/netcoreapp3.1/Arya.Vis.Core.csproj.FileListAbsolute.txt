@@ -10,3 +10,7 @@ E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netcoreapp3.1\Ar
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netcoreapp3.1\Arya.Vis.Core.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netcoreapp3.1\Arya.Vis.Core.pdb
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netcoreapp3.1\Arya.Vis.Core.csprojAssemblyReference.cache
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\bin\Debug\netcoreapp3.1\Arya.Storage.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.pdb
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\bin\Debug\netcoreapp3.1\Arya.Storage.pdb

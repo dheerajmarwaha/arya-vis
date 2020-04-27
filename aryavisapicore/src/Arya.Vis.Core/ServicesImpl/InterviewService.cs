@@ -33,12 +33,6 @@ namespace Arya.Vis.Core.ServicesImpl
         public Task<Interview> CreateAsync(Interview interview)
         {
             return _interviewRepositry.CreateAsync(interview);
-        }
-
-      
-
-        
-
-        
+        }        
     }
 }

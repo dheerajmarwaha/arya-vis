@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Arya.Exceptions/0.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Arya.Exceptions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Arya.Exceptions.dll": {}
+        }
+      },
       "coverlet.collector/1.2.0": {
         "type": "package",
         "build": {
@@ -1285,6 +1294,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/MimeKit.dll": {}
+        }
+      },
+      "MySqlConnector/0.63.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {}
         }
       },
       "NETStandard.Library/1.6.0": {
@@ -3113,10 +3131,40 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "Arya.Storage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Arya.Storage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Arya.Storage.dll": {}
+        }
+      },
+      "Arya.Storage.MySql/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Arya.Exceptions": "0.4.0",
+          "Arya.Storage": "1.0.0",
+          "MySqlConnector": "0.63.2"
+        },
+        "compile": {
+          "bin/placeholder/Arya.Storage.MySql.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Arya.Storage.MySql.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Arya.Vis.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
           "Arya.Vis.Container.Default": "1.0.0",
           "Arya.Vis.Core": "1.0.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
@@ -3138,6 +3186,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
           "Arya.Vis.Repository": "1.0.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
           "GraphQL.Server.Transports.WebSockets": "3.4.0",
@@ -3160,6 +3210,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
           "GraphQL": "2.4.0",
           "Mailkit": "2.6.0",
           "System.ComponentModel.Annotations": "4.7.0",
@@ -3170,24 +3222,46 @@
         },
         "runtime": {
           "bin/placeholder/Arya.Vis.Core.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Arya.Vis.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Arya.Vis.Core": "1.0.0"
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
+          "Arya.Vis.Core": "1.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.3"
         },
         "compile": {
           "bin/placeholder/Arya.Vis.Repository.dll": {}
         },
         "runtime": {
           "bin/placeholder/Arya.Vis.Repository.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
   "libraries": {
+    "Arya.Exceptions/0.4.0": {
+      "sha512": "79cVZeYggjB4wKIBt+qYbNmZN6u5F011lZSJdWZb9KAPkIAd5ratvnwIIkH8JHYNdzV9DpVPVvzYKQ5REx50Ng==",
+      "type": "package",
+      "path": "arya.exceptions/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        "arya.exceptions.0.4.0.nupkg.sha512",
+        "arya.exceptions.nuspec",
+        "lib/netcoreapp3.0/Arya.Exceptions.dll",
+        "lib/netcoreapp3.1/Arya.Exceptions.dll",
+        "lib/netstandard2.0/Arya.Exceptions.dll"
+      ]
+    },
     "coverlet.collector/1.2.0": {
       "sha512": "ZB+EGXsVBIn8cew7D3S2c+rgIlokKv1dSwsXEoiFQaNXF/BSxp9Rlfz/jV1ehSWH5XpLitfRxFNW3ok7uPDOXA==",
       "type": "package",
@@ -4925,6 +4999,34 @@
         "lib/xamarinios/MimeKit.xml",
         "mimekit.2.6.0.nupkg.sha512",
         "mimekit.nuspec"
+      ]
+    },
+    "MySqlConnector/0.63.2": {
+      "sha512": "Evp3Xq8XSA4MoiTK4c3Z7h72yOk4qobZBCzWnCJenKass8mV8WGp8A7nJVbwy5Yq3xI9sOEr/4aPZTtLgIsErg==",
+      "type": "package",
+      "path": "mysqlconnector/0.63.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/netcoreapp2.1/MySqlConnector.dll",
+        "lib/netcoreapp2.1/MySqlConnector.xml",
+        "lib/netcoreapp3.0/MySqlConnector.dll",
+        "lib/netcoreapp3.0/MySqlConnector.xml",
+        "lib/netstandard1.3/MySqlConnector.dll",
+        "lib/netstandard1.3/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.0.63.2.nupkg.sha512",
+        "mysqlconnector.nuspec"
       ]
     },
     "NETStandard.Library/1.6.0": {
@@ -9621,6 +9723,16 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Arya.Storage/1.0.0": {
+      "type": "project",
+      "path": "../../../../arya.storage/src/Arya.Storage/Arya.Storage.csproj",
+      "msbuildProject": "../../../../arya.storage/src/Arya.Storage/Arya.Storage.csproj"
+    },
+    "Arya.Storage.MySql/1.0.0": {
+      "type": "project",
+      "path": "../../../../arya.storage.mysql/src/Arya.Storage.MySql/Arya.Storage.MySql.csproj",
+      "msbuildProject": "../../../../arya.storage.mysql/src/Arya.Storage.MySql/Arya.Storage.MySql.csproj"
     },
     "Arya.Vis.Api/1.0.0": {
       "type": "project",

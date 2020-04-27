@@ -86,7 +86,6 @@ E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreap
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.csprojAssemblyReference.cache
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.csproj.CoreCompileInputs.cache
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.AssemblyInfoInputs.cache
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.AssemblyInfo.cs
@@ -94,3 +93,4 @@ E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreap
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.pdb
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.genruntimeconfig.cache
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.csprojAssemblyReference.cache

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aHIVUnbp6I7xxP3NaBAGzNNaDgyOChMMyC12aEaJVjiC6/1D7X1Es4PfGe2jnt547/nez+KqKhVXpvSRvj3wSQ==",
+  "dgSpecHash": "v6mDBD7O9+MBVeieGl8xNSaGSoFwr0NW7MeQQL2tdcaoCozxUOrpE69jzNgpuXG+HLVtU1l+P1gB9/in5tUvZA==",
   "success": true,
   "projectFilePath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dheer\\.nuget\\packages\\arya.exceptions\\0.4.0\\arya.exceptions.0.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql\\2.4.0\\graphql.2.4.0.nupkg.sha512",
@@ -28,6 +29,7 @@
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\mimekit\\2.6.0\\mimekit.2.6.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\moq\\4.13.1\\moq.4.13.1.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\mysqlconnector\\0.63.2\\mysqlconnector.0.63.2.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",

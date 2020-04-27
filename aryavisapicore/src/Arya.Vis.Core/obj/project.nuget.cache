@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1o8Ous1wGO6hNrLNEbciZ4Ufbb4l3IOeDqbT0+NfD1CX9godHQniQTGo1i42FQjiy/ualfofdY0K2mf8JgEOLQ==",
+  "dgSpecHash": "WewaVNRBbm81N9H6oMqhmcZRLwjObeRrYSs1nGoGT1ycL/0bohY41G0nioagCxZ72alwxdGd8osjQmm5r7EfAw==",
   "success": true,
   "projectFilePath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dheer\\.nuget\\packages\\arya.exceptions\\0.4.0\\arya.exceptions.0.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql\\2.4.0\\graphql.2.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql-parser\\3.0.0\\graphql-parser.3.0.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\mailkit\\2.6.0\\mailkit.2.6.0.nupkg.sha512",
@@ -12,6 +13,7 @@
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\mimekit\\2.6.0\\mimekit.2.6.0.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\mysqlconnector\\0.63.2\\mysqlconnector.0.63.2.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\portable.bouncycastle\\1.8.5\\portable.bouncycastle.1.8.5.nupkg.sha512",

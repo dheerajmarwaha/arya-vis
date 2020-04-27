@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "Arya.Vis.Core/1.0.0": {
         "dependencies": {
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
           "GraphQL": "2.4.0",
           "MailKit": "2.6.0",
           "System.ComponentModel.Annotations": "4.7.0",
@@ -16,6 +18,14 @@
         },
         "runtime": {
           "Arya.Vis.Core.dll": {}
+        }
+      },
+      "Arya.Exceptions/0.4.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Arya.Exceptions.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
+          }
         }
       },
       "GraphQL/2.4.0": {
@@ -99,6 +109,14 @@
           "lib/netstandard2.0/MimeKit.dll": {
             "assemblyVersion": "2.6.0.0",
             "fileVersion": "2.6.0.0"
+          }
+        }
+      },
+      "MySqlConnector/0.63.2": {
+        "runtime": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {
+            "assemblyVersion": "0.63.2.0",
+            "fileVersion": "0.63.2.0"
           }
         }
       },
@@ -1054,6 +1072,21 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Arya.Storage/1.0.0": {
+        "runtime": {
+          "Arya.Storage.dll": {}
+        }
+      },
+      "Arya.Storage.MySql/1.0.0": {
+        "dependencies": {
+          "Arya.Exceptions": "0.4.0",
+          "Arya.Storage": "1.0.0",
+          "MySqlConnector": "0.63.2"
+        },
+        "runtime": {
+          "Arya.Storage.MySql.dll": {}
+        }
+      },
       "System.Reactive.Reference/4.4.0.0": {
         "runtime": {
           "System.Reactive.dll": {
@@ -1069,6 +1102,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Arya.Exceptions/0.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-79cVZeYggjB4wKIBt+qYbNmZN6u5F011lZSJdWZb9KAPkIAd5ratvnwIIkH8JHYNdzV9DpVPVvzYKQ5REx50Ng==",
+      "path": "arya.exceptions/0.4.0",
+      "hashPath": "arya.exceptions.0.4.0.nupkg.sha512"
     },
     "GraphQL/2.4.0": {
       "type": "package",
@@ -1125,6 +1165,13 @@
       "sha512": "sha512-254R07ICLw0mIEhXEcYsALGF7Tgt8mAOfD7lcui1XXBdQGbpj5WFOzx9TojSMPBt2ZRBfolWhoSC9tnTVY7wRw==",
       "path": "mimekit/2.6.0",
       "hashPath": "mimekit.2.6.0.nupkg.sha512"
+    },
+    "MySqlConnector/0.63.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Evp3Xq8XSA4MoiTK4c3Z7h72yOk4qobZBCzWnCJenKass8mV8WGp8A7nJVbwy5Yq3xI9sOEr/4aPZTtLgIsErg==",
+      "path": "mysqlconnector/0.63.2",
+      "hashPath": "mysqlconnector.0.63.2.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",
@@ -1811,6 +1858,16 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Arya.Storage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Arya.Storage.MySql/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "System.Reactive.Reference/4.4.0.0": {
       "type": "reference",

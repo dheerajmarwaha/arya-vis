@@ -138,3 +138,9 @@ E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\zh-
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\GraphQL.Server.Ui.Playground.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.csproj.CoreCompileInputs.cache
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Storage.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Storage.pdb
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.pdb
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Exceptions.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\MySqlConnector.dll

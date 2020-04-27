@@ -119,3 +119,9 @@ E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\o
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Gateway.EmailProvider.Tests.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Gateway.EmailProvider.Tests.pdb
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Gateway.EmailProvider.Tests.genruntimeconfig.cache
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Arya.Exceptions.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Arya.Storage.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Arya.Storage.pdb
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.pdb

@@ -20,6 +20,14 @@
           "Arya.Vis.Core.Tests.dll": {}
         }
       },
+      "Arya.Exceptions/0.4.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Arya.Exceptions.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
+          }
+        }
+      },
       "coverlet.collector/1.2.0": {},
       "GraphQL/2.4.0": {
         "dependencies": {
@@ -1127,6 +1135,14 @@
           }
         }
       },
+      "MySqlConnector/0.63.2": {
+        "runtime": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {
+            "assemblyVersion": "0.63.2.0",
+            "fileVersion": "0.63.2.0"
+          }
+        }
+      },
       "NETStandard.Library/1.6.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -2175,8 +2191,25 @@
           "Microsoft.NET.Test.Sdk": "16.5.0"
         }
       },
+      "Arya.Storage/1.0.0": {
+        "runtime": {
+          "Arya.Storage.dll": {}
+        }
+      },
+      "Arya.Storage.MySql/1.0.0": {
+        "dependencies": {
+          "Arya.Exceptions": "0.4.0",
+          "Arya.Storage": "1.0.0",
+          "MySqlConnector": "0.63.2"
+        },
+        "runtime": {
+          "Arya.Storage.MySql.dll": {}
+        }
+      },
       "Arya.Vis.Api/1.0.0": {
         "dependencies": {
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
           "Arya.Vis.Container.Default": "1.0.0",
           "Arya.Vis.Core": "1.0.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
@@ -2190,6 +2223,8 @@
       },
       "Arya.Vis.Container.Default/1.0.0": {
         "dependencies": {
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
           "Arya.Vis.Repository": "1.0.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
           "GraphQL.Server.Transports.WebSockets": "3.4.0",
@@ -2204,6 +2239,8 @@
       },
       "Arya.Vis.Core/1.0.0": {
         "dependencies": {
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
           "GraphQL": "2.4.0",
           "MailKit": "2.6.0",
           "System.ComponentModel.Annotations": "4.7.0",
@@ -2215,7 +2252,10 @@
       },
       "Arya.Vis.Repository/1.0.0": {
         "dependencies": {
-          "Arya.Vis.Core": "1.0.0"
+          "Arya.Storage": "1.0.0",
+          "Arya.Storage.MySql": "1.0.0",
+          "Arya.Vis.Core": "1.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.3"
         },
         "runtime": {
           "Arya.Vis.Repository.dll": {}
@@ -2236,6 +2276,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Arya.Exceptions/0.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-79cVZeYggjB4wKIBt+qYbNmZN6u5F011lZSJdWZb9KAPkIAd5ratvnwIIkH8JHYNdzV9DpVPVvzYKQ5REx50Ng==",
+      "path": "arya.exceptions/0.4.0",
+      "hashPath": "arya.exceptions.0.4.0.nupkg.sha512"
     },
     "coverlet.collector/1.2.0": {
       "type": "package",
@@ -2719,6 +2766,13 @@
       "sha512": "sha512-254R07ICLw0mIEhXEcYsALGF7Tgt8mAOfD7lcui1XXBdQGbpj5WFOzx9TojSMPBt2ZRBfolWhoSC9tnTVY7wRw==",
       "path": "mimekit/2.6.0",
       "hashPath": "mimekit.2.6.0.nupkg.sha512"
+    },
+    "MySqlConnector/0.63.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Evp3Xq8XSA4MoiTK4c3Z7h72yOk4qobZBCzWnCJenKass8mV8WGp8A7nJVbwy5Yq3xI9sOEr/4aPZTtLgIsErg==",
+      "path": "mysqlconnector/0.63.2",
+      "hashPath": "mysqlconnector.0.63.2.nupkg.sha512"
     },
     "NETStandard.Library/1.6.0": {
       "type": "package",
@@ -3545,6 +3599,16 @@
       "sha512": "sha512-3eq5cGXbEJkqW9nwLuXwtxy9B5gMA8i7HW4rN63AhAvy5UvEcQbZnve23wx/oPrkyg/4CbfNhxkBezS0b1oUdQ==",
       "path": "xunit.runner.visualstudio/2.4.0",
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    },
+    "Arya.Storage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Arya.Storage.MySql/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Arya.Vis.Api/1.0.0": {
       "type": "project",

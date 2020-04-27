@@ -11,7 +11,7 @@ namespace Arya.Vis.Core.Entities{
 
         [MaxLength(2000)]
         [Display(Name="Company Location")]
-        public  System.String CompanyLocation{get;set;}
+        public  System.String company_location {get;set;}
 
         [MaxLength(200)]
         [Display(Name="Job Posting Url")]
@@ -20,7 +20,7 @@ namespace Arya.Vis.Core.Entities{
         
         [MaxLength(2147483647)]
         [Display(Name="Job Desc")]
-        public  System.String JobDesc{get;set;}
+        public  System.String job_desc {get;set;}
         
         [Display(Name="Job Summary Visible")]
         public  System.Boolean? JobSummaryVisible{get;set;}

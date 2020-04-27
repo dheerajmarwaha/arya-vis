@@ -12,3 +12,7 @@ E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\obj\Debug
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\obj\Debug\netcoreapp3.1\Arya.Vis.Gateway.EmailProvider.csproj.CopyComplete
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\obj\Debug\netcoreapp3.1\Arya.Vis.Gateway.EmailProvider.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\obj\Debug\netcoreapp3.1\Arya.Vis.Gateway.EmailProvider.pdb
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\bin\Debug\netcoreapp3.1\Arya.Storage.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\bin\Debug\netcoreapp3.1\Arya.Storage.pdb
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Gateway.EmailProvider\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.pdb

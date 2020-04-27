@@ -1,6 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\arya.storage.mysql\src\Arya.Storage.MySql\Arya.Storage.MySql.csproj">
+      <Private>true</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\arya.storage\src\Arya.Storage\Arya.Storage.csproj">
+      <Private>true</Private>
+    </ProjectReference>
     <ProjectReference Include="..\Arya.Vis.Core\Arya.Vis.Core.csproj" />
     <ProjectReference Include="..\Arya.Vis.Container.Default\Arya.Vis.Container.Default.csproj" />
   </ItemGroup>

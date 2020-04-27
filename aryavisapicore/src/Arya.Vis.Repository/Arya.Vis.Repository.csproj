@@ -1,6 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\arya.storage.mysql\src\Arya.Storage.MySql\Arya.Storage.MySql.csproj" />
+    <ProjectReference Include="..\..\..\..\arya.storage\src\Arya.Storage\Arya.Storage.csproj" />
     <ProjectReference Include="..\Arya.Vis.Core\Arya.Vis.Core.csproj" />
   </ItemGroup>
 

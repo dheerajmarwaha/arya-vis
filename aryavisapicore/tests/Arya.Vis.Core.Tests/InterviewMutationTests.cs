@@ -74,7 +74,7 @@ namespace Arya.Vis.Core.Tests
 			var interview = JsonConvert.DeserializeObject<Interview>(ojObject.ToString());
 
 			Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-			Assert.NotNull(interview.InterviewGuid);
+			Assert.NotNull(interview.interview_guid );
         }
 
        

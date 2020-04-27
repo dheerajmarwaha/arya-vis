@@ -45,7 +45,19 @@ namespace Arya.Vis.Api {
             {
                 options.AllowSynchronousIO = true;
             });
-            services.AddControllers ();            
+            services.AddControllers ();
+
+            // Configure CORS
+            services.AddCors(options => {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder
+                    .SetIsOriginAllowed(host => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                    .Build()
+                );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

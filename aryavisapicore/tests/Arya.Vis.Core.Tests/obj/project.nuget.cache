@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "32ELnI8ZP5VJPSjbrBxvAmJUXl++d3NVF+OdsvfJZ18kkiu32Jj+Na3wbwBkS0bpU5xGjbbsUZemcD7Yg4gyUw==",
+  "dgSpecHash": "tieM23hXEd5amKQokd0t+E+72yXGM4b1pDgec/NbwzWWcxqn88zyel+l+RLYIgCKWzOEyi9ffHGOOZfjNCDuCw==",
   "success": true,
   "projectFilePath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Core.Tests\\Arya.Vis.Core.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dheer\\.nuget\\packages\\arya.exceptions\\0.4.0\\arya.exceptions.0.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql\\2.4.0\\graphql.2.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql-parser\\3.0.0\\graphql-parser.3.0.0.nupkg.sha512",
@@ -73,6 +74,7 @@
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\mimekit\\2.6.0\\mimekit.2.6.0.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\mysqlconnector\\0.63.2\\mysqlconnector.0.63.2.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
