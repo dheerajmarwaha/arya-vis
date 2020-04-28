@@ -41,100 +41,27 @@ namespace Arya.Vis.Repository
         public async Task<Interview> GetInterviewAsync(Guid interviewGuid)
         {
             ValidationUtil.NotEmptyGuid(interviewGuid, nameof(interviewGuid));
-            try
-            {
-                await SqlProvider.OpenConnectionAsync();
-            }
-            catch { }
             var command = SqlProvider.CreateCommand(Routines.GetInterview);
             _logger.LogInformation("InterviewRepository : Getting details of Interview {@InterviewGuid}", interviewGuid);
             using (command)
             {
                 SqlProvider.AddParameterWithValue(command, "v_interview_guid", interviewGuid);
-                Interview interview = ModelUtils<Interview>.CreateObject(await SqlProvider.ExecuteCommandAsync(command));
-                return interview;
-                //return await ReadInterviewAsync(await SqlProvider.ExecuteReaderAsync(command));
+                return ModelUtils<Interview>.CreateObject(await SqlProvider.ExecuteCommandAsync(command));
             }
         }
 
         public async Task<IEnumerable<Interview>> GetInterviewsAsync()
         {
-            try
-            {
-                await SqlProvider.OpenConnectionAsync();
-            }
-            catch { }
             var command = SqlProvider.CreateCommand(Routines.GetInterview);
             _logger.LogInformation("InterviewRepository : Getting details of all Interviews");
             using (command)
             {
                 SqlProvider.AddParameterWithValue(command, "v_interview_guid", null);
-                List<Interview> lstInterviews = ModelUtils<Interview>.CreateObjects(await SqlProvider.ExecuteCommandAsync(command));
-
-                return lstInterviews;
-                //return await ReadInterviewsAsync(await SqlProvider.ExecuteReaderAsync(command));
+                return ModelUtils<Interview>.CreateObjects(await SqlProvider.ExecuteCommandAsync(command));
             }
         }
 
-        private async Task<Interview> ReadInterviewAsync(DbDataReader reader)
-        {
-
-            using (reader)
-            {
-
-                if (await SqlProvider.ReadAsync(reader))
-                {
-                    var interview = new Interview
-                    {
-                        interview_guid  = await SqlProvider.GetFieldValueAsync<Guid>(reader, "interview_guid"),
-                        interview_code  = await SqlProvider.GetFieldValueAsync<string>(reader, "interview_code"),
-                        interview_title  = await SqlProvider.GetFieldValueAsync<string>(reader, "interview_title"),
-                        job_desc  = await SqlProvider.GetFieldValueAsync<string>(reader, "job_desc"),
-                        company_location  = await SqlProvider.GetFieldValueAsync<string>(reader, "company_location"),
-                        InterviewStatusGuid = await SqlProvider.GetFieldValueAsync<Guid>(reader, "interview_status_guid"),
-                        InterviewOwnerGuid = await SqlProvider.GetFieldValueAsync<Guid>(reader, "interview_owner_guid"),
-                        interview_start_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "interview_start_date")),
-                        interview_end_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "interview_end_date")),
-                        created_by_guid  = await SqlProvider.GetFieldValueAsync<Guid>(reader, "created_by_guid"),
-                        created_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "created_date")),
-                        modified_by_guid  = await SqlProvider.GetFieldValueAsync<Guid>(reader, "modified_by_guid"),
-                        modified_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "modified_date")),
-                    };
-                    return interview;
-                }
-            }
-            return null;
-        }
-        private async Task<IEnumerable<Interview>> ReadInterviewsAsync(DbDataReader reader)
-        {
-            IList<Interview> lstInterviews = new List<Interview>();
-            using (reader)
-            {
-                //await SqlProvider.NextResultAsync(reader);
-                while (await SqlProvider.ReadAsync(reader))
-                {
-                    var interview = new Interview
-                    {
-                        interview_guid  = await SqlProvider.GetFieldValueAsync<Guid>(reader, "interview_guid"),
-                        interview_code  = await SqlProvider.GetFieldValueAsync<string>(reader, "interview_code"),
-                        interview_title  = await SqlProvider.GetFieldValueAsync<string>(reader, "interview_title"),
-                        job_desc  = await SqlProvider.GetFieldValueAsync<string>(reader, "job_desc"),
-                        company_location  = await SqlProvider.GetFieldValueAsync<string>(reader, "company_location"),
-                        InterviewStatusGuid = await SqlProvider.GetFieldValueAsync<Guid>(reader, "interview_status_guid"),
-                        InterviewOwnerGuid = await SqlProvider.GetFieldValueAsync<Guid>(reader, "interview_owner_guid"),
-                        interview_start_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "interview_start_date")),
-                        interview_end_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "interview_end_date")),
-                        created_by_guid  = await SqlProvider.GetFieldValueAsync<Guid>(reader, "created_by_guid"),
-                        created_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "created_date")),
-                        modified_by_guid  = await SqlProvider.GetFieldValueAsync<Guid>(reader, "modified_by_guid"),
-                        modified_date  = Convert.ToDateTime(await SqlProvider.GetFieldValueAsync<DateTime>(reader, "modified_date")),
-                    };
-                    lstInterviews.Add(interview);
-                    //await SqlProvider.NextResultAsync(reader);
-                }
-            }
-            return lstInterviews;
-        }
+        
         private void AddInterviewQueryParameters(DbCommand command, Interview interview)
         {
             SqlProvider.AddParameterWithValue(command, "v_interview_guid", interview.interview_guid );

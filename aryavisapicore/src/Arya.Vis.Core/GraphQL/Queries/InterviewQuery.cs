@@ -28,7 +28,7 @@ namespace Arya.Vis.Core.GraphQL.GraphQLQueries
 
             Field<ListGraphType<InterviewType>>(
                 name: "interviews",
-                resolve: context => interviews.GetInterviewAsync()
+                resolve: context => interviews.GetInterviewsAsync()
             );
         }
     }

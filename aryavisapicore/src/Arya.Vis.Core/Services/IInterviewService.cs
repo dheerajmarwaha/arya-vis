@@ -9,7 +9,7 @@ namespace Arya.Vis.Core.Services
     {
         Interview GetInterview(Guid interviewGuid);
         Task<Interview> GetInterviewAsync(Guid interviewGuid);
-        Task<IEnumerable<Interview>>  GetInterviewAsync();
+        Task<IEnumerable<Interview>>  GetInterviewsAsync();
          Task<Interview> CreateAsync(Interview interview);
     }
 }
