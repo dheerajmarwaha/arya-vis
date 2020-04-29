@@ -7,7 +7,7 @@ CREATE TABLE `mstcountry` (
    `CountryName` varchar(2000) DEFAULT NULL,
    `CountryDesc` varchar(2000) DEFAULT NULL,
    `Region` int(11) DEFAULT NULL,
-   `OrgId` int(11) DEFAULT NULL,
+   `OrgGuid` BINARY(16) DEFAULT NULL,
    `IsActive` bit(1) DEFAULT b'1',
    `CreatedById` int(11) DEFAULT '1',
    `NationalCode` varchar(45) DEFAULT NULL,

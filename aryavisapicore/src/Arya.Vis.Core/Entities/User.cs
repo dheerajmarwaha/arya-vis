@@ -15,7 +15,7 @@ namespace Arya.Vis.Core.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string RoleName { get; set; }
-        public Guid RoleGroupID { get; set; }
+        public int RoleGroupID { get; set; }
         public bool IsActive { get; set; }
         public bool HasGodView => RoleName == "God View";
         public bool IsAdmin => RoleName == "Admin";

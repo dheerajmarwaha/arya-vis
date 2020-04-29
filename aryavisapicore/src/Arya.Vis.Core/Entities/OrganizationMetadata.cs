@@ -12,7 +12,11 @@ namespace Arya.Vis.Core.Entities
         public string OrgCode { get; set; }
         public bool IsActive { get; set; }
         public DateTime SubscriptionEndDate { get; set; }
+        public Guid CreatedByGuId { get; set; }
+
         public DateTime CreatedDate { get; set; }
+        public Guid ModifiedByGuId { get; set; }
+
         public DateTime ModifiedDate { get; set; }
     }
 }

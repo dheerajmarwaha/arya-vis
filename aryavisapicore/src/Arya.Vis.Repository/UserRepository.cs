@@ -248,7 +248,7 @@ namespace Arya.Vis.Repository
         }
         private void AddUserParameters_Insert(DbCommand command, User user)
         {
-            SqlProvider.AddParameterWithValue(command, "vUserGuid", Guid.NewGuid());
+            SqlProvider.AddParameterWithValue(command, "vUserGuid", user.UserGuid); //This is populated from cognito response - Sub attribute
             SqlProvider.AddParameterWithValue(command, "vFirstName", user.FirstName);
             SqlProvider.AddParameterWithValue(command, "vLastName", user.LastName);
             SqlProvider.AddParameterWithValue(command, "vEmail", user.Email);
