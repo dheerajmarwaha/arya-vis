@@ -11,9 +11,9 @@ namespace Arya.Vis.Api.Services
     public interface IIdentityService
     {
         Task<Organization> CreateOrganizationAsync(OrganizationCreateCommand organizationCreateCommand);
-        Task ResetUserPasswordAsync(int userId, ResetUserPasswordRequest passwordResetRequest);
-        Task<User> CreateUserAsync(int orgId, User user, string password);
-        Task<User> UpdateUserAsync(int userId, User user);
+        Task ResetUserPasswordAsync(Guid userGuid, ResetUserPasswordRequest passwordResetRequest);
+        Task<User> CreateUserAsync(Guid OrgGuid, User user, string password);
+        Task<User> UpdateUserAsync(Guid userGuid, User user);
         Task VerifyUserAsync(UserVerificationRequest request);
     }
 }

@@ -55,7 +55,7 @@ namespace Arya.Vis.Repository
             }
         }
 
-        public async Task<Organization> FetchOrganizationAsync(Guid OrgGuid)
+        public async Task<Organization> GetOrganizationAsync(Guid OrgGuid)
         {
             var command = SqlProvider.CreateCommand(Routines.GetOrganization);
             SqlProvider.AddParameterWithValue(command, "vOrgGuid", OrgGuid);
@@ -88,7 +88,7 @@ namespace Arya.Vis.Repository
             }
         }
 
-        public async Task<OrganizationMetadataSearchResult> FetchOrganizationsMetadataAsync(OrganizationsMetadataQuery organizationsMetadataQuery)
+        public async Task<OrganizationMetadataSearchResult> GetOrganizationsMetadataAsync(OrganizationsMetadataQuery organizationsMetadataQuery)
         {
             var command = SqlProvider.CreateCommand(Routines.GetOrganizations);
             SqlProvider.AddParameterWithValue(command, "vSearchKeyword", organizationsMetadataQuery.SearchKeyword);

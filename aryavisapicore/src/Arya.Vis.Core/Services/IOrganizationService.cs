@@ -11,11 +11,16 @@ namespace Arya.Vis.Core.Services
 {
     public interface IOrganizationService
     {
+        Task<Organization> GetOrganizationAsync(Guid orgGuid);
+        
         Task<Organization> CreateOrganizationAsync(OrganizationCreateCommand organizationCreateCommand);
-        Task<Organization> GetOrganizationAsync(Guid OrgGuid);
-        Task<Organization> UpdateAsync(Guid OrgGuid, OrganizationCreateCommand organizationCreateCommand);
+        
+        Task<Guid> UpdateAsync(Guid orgGuid, OrganizationCreateCommand organizationCreateCommand);
+        
         Task<OrganizationMetadataSearchResult> GetOrganizationsMetadataAsync(OrganizationsMetadataQuery organizationMetadataQuery);
-        Task<IDictionary<int, OrganizationStat>> GetBulkOrganizationStatsAsync(IEnumerable<int> organizationIds);
-        Task DeleteOrganizationAsync(Guid OrgGuid);
+        
+        Task<IDictionary<Guid, OrganizationStat>> GetBulkOrganizationStatsAsync(IEnumerable<Guid> organizationIds);
+        
+        Task DeleteOrganizationAsync(Guid orgGuid);
     }
 }

@@ -11,11 +11,15 @@ namespace Arya.Vis.Core.Repositories
 {
     public interface IOrganizationRepository
     {
+        Task<Organization> GetOrganizationAsync(Guid orgGuid);
+        
         Task<Guid> CreateOrganizationAsync(OrganizationCreateCommand organizationCreateCommand);
-        Task<Guid> UpdateAsync(Guid OrgGuid, OrganizationCreateCommand organizationCreateCommand);
-        Task<Organization> FetchOrganizationAsync(Guid OrgGuid);
-        Task DeleteOrganizationAsync(Guid OrgGuid);
-        Task<OrganizationMetadataSearchResult> FetchOrganizationsMetadataAsync(OrganizationsMetadataQuery organizationsMetadataQuery);
+        
+        Task<Guid> UpdateAsync(Guid orgGuid, OrganizationCreateCommand organizationCreateCommand);
+        
+        Task<OrganizationMetadataSearchResult> GetOrganizationsMetadataAsync(OrganizationsMetadataQuery organizationsMetadataQuery);
         Task<IDictionary<Guid, OrganizationStat>> GetBulkOrganizationStatsAsync(IEnumerable<Guid> orgGuids);
+        
+        Task DeleteOrganizationAsync(Guid orgGuid);
     }
 }
