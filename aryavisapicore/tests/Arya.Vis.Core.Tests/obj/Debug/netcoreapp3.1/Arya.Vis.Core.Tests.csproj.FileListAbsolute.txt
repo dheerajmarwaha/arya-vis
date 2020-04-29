@@ -225,3 +225,12 @@ E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcorea
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.pdb
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Exceptions.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.pdb

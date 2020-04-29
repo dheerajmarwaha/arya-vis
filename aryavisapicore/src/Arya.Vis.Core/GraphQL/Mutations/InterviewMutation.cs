@@ -15,15 +15,17 @@ namespace Arya.Vis.Core.GraphQL.GraphQLQueries
         {
             Name = "Mutation";
 
-            Field<InterviewType>(
+            FieldAsync<InterviewType>(
                 name: "createInterview",
-                arguments: new QueryArguments(new QueryArgument<InterviewCreateInputType> { Name = "interview", Description = "Provide Interview object for creation." }),
 
-                resolve: context =>
+                arguments: new QueryArguments(
+                    new QueryArgument<InterviewInputType> { Name = "interview", Description = "Provide Interview object for creation." }),
+
+                resolve: async context =>
                 {
                     var interviewInput = context.GetArgument<Interview>("interview");
-                    //interviewInput
-                    return interviews.CreateAsync(interviewInput);
+                    return  await context.TryAsyncResolve( 
+                        async c=> await interviews.CreateAsync(interviewInput));
                 });
         }
     }

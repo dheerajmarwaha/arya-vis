@@ -10,23 +10,21 @@ namespace Arya.Vis.Core.Services
 {
     public interface IUserService {
         Task LoadCurrentUserAsync(string email, bool allowInactive = false);
-        Task LoadCurrentUserAsync(System.Guid id, bool allowInactive = false);
+        Task LoadCurrentUserAsync(System.Guid userGuid, bool allowInactive = false);
         User GetCurrentUser();
         void SetCurrentUser(User user, bool allowInactive = false);
-        Task<UserSearchResult> GetAllUsersAsync(UserSearchQuery query, int? orgId = null);
-        Task<User> GetUserAsync(int userId);
+        Task<UserSearchResult> GetAllUsersAsync(UserSearchQuery query, Guid? orgGuid = null);
         Task<User> GetUserAsync(Guid userGuid);
         Task<User> GetUserAsync(string email);
         Task<UserSearchResult> GetTotalCountOfUsers();
-        Task LoadCurrentUserAsync(int userId, bool allowInactive = false);
         Task<User> CreateUserAsync(User user);
-        Task<User> UpdateAsync(int userId, User user);
-        Task<User> GetDefaultAdminUserAsync(int OrgId);
-        Task<IEnumerable<User>> GetUsersByOrgIdAsync(int orgId);
-        Task<IEnumerable<int>> GetUserIdsByOrgIdAsync(int orgId);
+        Task<User> UpdateAsync(Guid userGuid, User user);
+        Task<User> GetDefaultAdminUserAsync(Guid orgGuid);
+        Task<IEnumerable<User>> GetUsersByOrgGuidAsync(Guid orgGuid);
+        Task<IEnumerable<Guid>> GetUserGuidsByOrgGuidAsync(Guid orgGuid);
         bool IsCurrentUserSet();
-        Task DeleteUserAsync(int userId);
+        Task DeleteUserAsync(Guid userGuid);
         Task CreateUnregisteredUserAsync(UnregisteredUserCreateCommand userCreateCommand);
-        Task<UnregisteredUser> GetUnregisteredUserDetailsAsync(Guid id);
+        Task<UnregisteredUser> GetUnregisteredUserDetailsAsync(Guid userGuid);
     }
 }

@@ -15,8 +15,8 @@ namespace Arya.Vis.Core.Repositories
         Task<int> GetTotalCountOfUsers(Guid orgGuid);
         Task<Guid> CreateUserAsync(User user);
         Task<Guid> UpdateAsync(Guid userGuid, User user);
-        Task<IEnumerable<User>> GetUsersByOrgIdAsync(Guid orgGuid);
-        Task<IEnumerable<Guid>> GetUserGuidsByOrgIdAsync(Guid orgGuid);
+        Task<IEnumerable<User>> GetUsersByOrgGuidAsync(Guid orgGuid);
+        Task<IEnumerable<Guid>> GetUserGuidsByOrgGuidAsync(Guid orgGuid);
         Task<User> GetDefaultAdminUserAsync(Guid orgGuid);
         Task DeleteUserAsync(Guid userGuid);
         Task CreateUnregisteredUserAsync(UnregisteredUserCreateCommand userCreateCommand);

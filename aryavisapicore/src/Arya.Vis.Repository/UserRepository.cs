@@ -113,7 +113,7 @@ namespace Arya.Vis.Repository
             }
         }
 
-        public async Task<IEnumerable<User>> GetUsersByOrgIdAsync(Guid orgGuid) {
+        public async Task<IEnumerable<User>> GetUsersByOrgGuidAsync(Guid orgGuid) {
             var command = SqlProvider.CreateCommand(Routines.GetUsersByOrgGuid);
             using(command) {
                 SqlProvider.AddParameterWithValue(command, "vOrgGuid", orgGuid);
@@ -124,7 +124,7 @@ namespace Arya.Vis.Repository
             }
         }
 
-        public async Task<IEnumerable<Guid>> GetUserGuidsByOrgIdAsync(Guid orgGuid) {
+        public async Task<IEnumerable<Guid>> GetUserGuidsByOrgGuidAsync(Guid orgGuid) {
             var command = SqlProvider.CreateCommand(Routines.GetUserGuidsByOrgGuid);
             using(command) {
                 SqlProvider.AddParameterWithValue(command, "vOrgGuid", orgGuid);

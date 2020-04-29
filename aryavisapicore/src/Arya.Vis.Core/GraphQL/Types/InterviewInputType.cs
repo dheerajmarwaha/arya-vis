@@ -3,23 +3,23 @@ using GraphQL.Types;
 
 namespace Arya.Vis.Core.GraphQL.GraphQLType
 {
-    public class InterviewCreateInputType : InputObjectGraphType
+    public class InterviewInputType : InputObjectGraphType
     {
-        public InterviewCreateInputType()
+        public InterviewInputType()
         {
             Name = "InterviewInput";
-            Field<NonNullGraphType<StringGraphType>>("interviewCode");
-            Field<StringGraphType>("interviewTitle");
-            Field<DateGraphType>("interviewStartDate");
-            Field<DateGraphType>("interviewEndDate");
+            Field<NonNullGraphType<StringGraphType>>("interview_code");
+            Field<StringGraphType>("interview_title");
+            Field<DateGraphType>("interview_start_date");
+            Field<DateGraphType>("interview_end_date");
             Field<IdGraphType>("orgGuid");
             Field<IdGraphType>("interviewStatusGuid");
             Field<IdGraphType>("interviewOwnerGuid");
             Field<DateGraphType>("interviewCreatedDate");
             Field<IdGraphType>("companyGuid");
-            Field<StringGraphType>("companyLocation");
+            Field<StringGraphType>("company_location");
             Field<StringGraphType>("jobPostingUrl");
-            Field<StringGraphType>("jobDesc");
+            Field<StringGraphType>("job_desc");
             Field<BooleanGraphType>("jobSummaryVisible");
             Field<IntGraphType>("publishId");
             Field<StringGraphType>("comments");

@@ -25,7 +25,7 @@ namespace Arya.Vis.Container.Default.Extensions
             services.AddSingleton <InterviewType>();
             services.AddSingleton<InterviewQuery>();            
 
-            services.AddSingleton<InterviewCreateInputType>();
+            services.AddSingleton<InterviewInputType>();
             services.AddSingleton<InterviewMutation>();
 
             services.AddSingleton<InterviewSchema>();

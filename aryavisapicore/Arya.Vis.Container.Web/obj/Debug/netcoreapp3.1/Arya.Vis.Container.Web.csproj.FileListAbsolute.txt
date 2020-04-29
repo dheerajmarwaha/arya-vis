@@ -1,0 +1,9 @@
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.deps.json
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.dll
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.csprojAssemblyReference.cache
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.AssemblyInfoInputs.cache
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.AssemblyInfo.cs
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.pdb
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.csproj.CoreCompileInputs.cache
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.dll
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.pdb
