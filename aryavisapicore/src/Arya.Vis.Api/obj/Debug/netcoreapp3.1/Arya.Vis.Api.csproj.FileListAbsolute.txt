@@ -136,8 +136,6 @@ E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\tr\
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\GraphQL.Server.Ui.Playground.dll
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.csproj.CoreCompileInputs.cache
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.MvcApplicationPartsAssemblyInfo.cache
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Storage.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Storage.pdb
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.dll
@@ -153,3 +151,7 @@ E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Mic
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.dll
 E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.pdb
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.csproj.CoreCompileInputs.cache
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\obj\Debug\netcoreapp3.1\Arya.Vis.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\AWSSDK.CognitoIdentityProvider.dll
+E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Api\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll

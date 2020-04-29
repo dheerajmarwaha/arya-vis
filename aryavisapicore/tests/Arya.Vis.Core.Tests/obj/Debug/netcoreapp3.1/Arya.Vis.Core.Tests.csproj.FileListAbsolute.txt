@@ -234,3 +234,5 @@ E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcorea
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\Arya.Vis.Container.Web.pdb
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\AWSSDK.CognitoIdentityProvider.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Core.Tests\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll

@@ -11,6 +11,27 @@
           "lib/netcoreapp3.1/Arya.Exceptions.dll": {}
         }
       },
+      "AWSSDK.CognitoIdentityProvider/3.3.109.25": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.106.13, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.106.13": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        }
+      },
       "coverlet.collector/1.2.0": {
         "type": "package",
         "build": {
@@ -3241,6 +3262,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AWSSDK.CognitoIdentityProvider": "3.3.109.25",
           "Arya.Storage": "1.0.0",
           "Arya.Storage.MySql": "1.0.0",
           "Arya.Vis.Container.Default": "1.0.0",
@@ -3355,6 +3377,95 @@
         "lib/netcoreapp3.0/Arya.Exceptions.dll",
         "lib/netcoreapp3.1/Arya.Exceptions.dll",
         "lib/netstandard2.0/Arya.Exceptions.dll"
+      ]
+    },
+    "AWSSDK.CognitoIdentityProvider/3.3.109.25": {
+      "sha512": "0f/3WCqsNwXnAaiGZJvmuisfFhAZ0tKh2hqNH9VquYnttCMD8cKYdiL3wZ78cIEWMZGiw0lpUMG4jfqB1vSTOw==",
+      "type": "package",
+      "path": "awssdk.cognitoidentityprovider/3.3.109.25",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.CognitoIdentityProvider.CodeAnalysis.dll",
+        "awssdk.cognitoidentityprovider.3.3.109.25.nupkg.sha512",
+        "awssdk.cognitoidentityprovider.nuspec",
+        "lib/MonoAndroid10/AWSSDK.CognitoIdentityProvider.XML",
+        "lib/MonoAndroid10/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/MonoTouch10/AWSSDK.CognitoIdentityProvider.XML",
+        "lib/MonoTouch10/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/MonoTouch10/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.CognitoIdentityProvider.XML",
+        "lib/Xamarin.iOS10/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/net35/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/net35/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/net35/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/net45/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/net45/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/net45/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/netstandard1.3/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/netstandard1.3/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/netstandard1.3/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentityProvider.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/uap/AWSSDK.CognitoIdentityProvider.XML",
+        "lib/uap/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/uap/AWSSDK.CognitoIdentityProvider.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.Core/3.3.106.13": {
+      "sha512": "w2QHR1vnmKeAggy14tzgX54R/xt3P1MmyQByQiWyV1bE3T7ORll6MFrlFyZV0Juz/QqT8BfXdM6PdSV8PCUVgQ==",
+      "type": "package",
+      "path": "awssdk.core/3.3.106.13",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.3.106.13.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
+        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netstandard1.3/AWSSDK.Core.dll",
+        "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
+        "lib/wp8/AWSSDK.Core.XML",
+        "lib/wp8/AWSSDK.Core.dll",
+        "lib/wp8/AWSSDK.Core.pdb",
+        "lib/wpa81/AWSSDK.Core.XML",
+        "lib/wpa81/AWSSDK.Core.dll",
+        "lib/wpa81/AWSSDK.Core.pdb",
+        "tools/account-management.ps1"
       ]
     },
     "coverlet.collector/1.2.0": {

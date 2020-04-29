@@ -6,6 +6,7 @@ namespace Arya.Vis.Repository
 {
     public static class Routines
     {
+        /* User */
         public const string CreateInterview = "v3_create_interview";
 
         public const string GetInterview = "v3_get_interview";
@@ -33,5 +34,18 @@ namespace Arya.Vis.Repository
         public const string CreateUnregisteredUser = "v3_create_unregistered_user";
 
         public const string GetUnregisteredUserDetails = "v3_get_unregistered_user_details";
+
+        /* Organization */
+        public const string CreateOrganization = "v3_insert_organization";
+
+        public const string UpdateOrganization = "v3_update_organization";
+
+        public const string GetOrganization = "v3_get_organization";
+
+        public const string DeleteOrganization = "v3_delete_organization";
+
+        public const string GetOrganizations = "v3_get_organizations_list";
+
+        public const string GetBulkOrganizationStats = "v3_get_bulk_organization_stats";
     }
 }

@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS mstorganization;
 CREATE TABLE mstorganization (
-	OrgGuId					BINARY  (16) NOT NULL,
+	OrgGuid					BINARY  (16) NOT NULL,
 	OrganizationName		varchar(2000) DEFAULT NULL,
 	LocationId				int(11) DEFAULT NULL,
 	OfficePhone				varchar(2000) DEFAULT NULL,

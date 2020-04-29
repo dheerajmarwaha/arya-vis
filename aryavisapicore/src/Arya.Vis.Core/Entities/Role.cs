@@ -7,6 +7,6 @@ namespace Arya.Vis.Core.Entities
     public class Role
     {
         public string RoleName { get; set; }
-        public Guid RoleGuid { get; set; }
+        public int RoleGroupID { get; set; }
     }
 }

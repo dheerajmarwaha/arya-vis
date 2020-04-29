@@ -115,6 +115,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AWSSDK.CognitoIdentityProvider": {
+              "target": "Package",
+              "version": "[3.3.109.25, )"
+            },
             "GraphQL.Server.Transports.AspNetCore": {
               "target": "Package",
               "version": "[3.4.0, )"

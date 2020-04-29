@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lkGW8ECqz2B5IIPjP+zC9Z7ZuiC5mov7PcM7uKrZ4VvQWUNX5/LRXKn6AEuqGt3GSeF2lXpFtWrzlq+NsMkHdw==",
+  "dgSpecHash": "FLfc+GNbT6A2XsIO/5vj+pdjs+58OwT9XfLm1WvBQYDVT78uCs2FMO7Y/A5fIeFN5rMFvfM00GXKZUqNyV+H6A==",
   "success": true,
   "projectFilePath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Api\\Arya.Vis.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dheer\\.nuget\\packages\\arya.exceptions\\0.4.0\\arya.exceptions.0.4.0.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\awssdk.cognitoidentityprovider\\3.3.109.25\\awssdk.cognitoidentityprovider.3.3.109.25.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\awssdk.core\\3.3.106.13\\awssdk.core.3.3.106.13.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql\\2.4.0\\graphql.2.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql-parser\\3.0.0\\graphql-parser.3.0.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql.server.core\\3.4.0\\graphql.server.core.3.4.0.nupkg.sha512",

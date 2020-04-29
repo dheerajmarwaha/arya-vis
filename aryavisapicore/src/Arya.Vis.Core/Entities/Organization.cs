@@ -12,7 +12,7 @@ namespace Arya.Vis.Core.Entities
         public string IdentityProviderIdentifier { get; set; }
         public string Address { get; set; }
         public int SourceLimit { get; set; }
-        public int? JobsLimit { get; set; }
+        public int? JobCountLimit { get; set; }
         public string OrgLevelMiles { get; set; }
         public IEnumerable<Role> Roles { get; set; }
     }

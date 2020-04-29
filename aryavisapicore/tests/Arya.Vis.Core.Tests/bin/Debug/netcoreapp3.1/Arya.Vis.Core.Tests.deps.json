@@ -28,6 +28,25 @@
           }
         }
       },
+      "AWSSDK.CognitoIdentityProvider/3.3.109.25": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.106.13"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.109.25"
+          }
+        }
+      },
+      "AWSSDK.Core/3.3.106.13": {
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.106.13"
+          }
+        }
+      },
       "coverlet.collector/1.2.0": {},
       "GraphQL/2.4.0": {
         "dependencies": {
@@ -2276,6 +2295,7 @@
       },
       "Arya.Vis.Api/1.0.0": {
         "dependencies": {
+          "AWSSDK.CognitoIdentityProvider": "3.3.109.25",
           "Arya.Storage": "1.0.0",
           "Arya.Storage.MySql": "1.0.0",
           "Arya.Vis.Container.Default": "1.0.0",
@@ -2360,6 +2380,20 @@
       "sha512": "sha512-79cVZeYggjB4wKIBt+qYbNmZN6u5F011lZSJdWZb9KAPkIAd5ratvnwIIkH8JHYNdzV9DpVPVvzYKQ5REx50Ng==",
       "path": "arya.exceptions/0.4.0",
       "hashPath": "arya.exceptions.0.4.0.nupkg.sha512"
+    },
+    "AWSSDK.CognitoIdentityProvider/3.3.109.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0f/3WCqsNwXnAaiGZJvmuisfFhAZ0tKh2hqNH9VquYnttCMD8cKYdiL3wZ78cIEWMZGiw0lpUMG4jfqB1vSTOw==",
+      "path": "awssdk.cognitoidentityprovider/3.3.109.25",
+      "hashPath": "awssdk.cognitoidentityprovider.3.3.109.25.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.3.106.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w2QHR1vnmKeAggy14tzgX54R/xt3P1MmyQByQiWyV1bE3T7ORll6MFrlFyZV0Juz/QqT8BfXdM6PdSV8PCUVgQ==",
+      "path": "awssdk.core/3.3.106.13",
+      "hashPath": "awssdk.core.3.3.106.13.nupkg.sha512"
     },
     "coverlet.collector/1.2.0": {
       "type": "package",

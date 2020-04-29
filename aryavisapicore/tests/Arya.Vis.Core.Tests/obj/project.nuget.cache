@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DAbIZ/+/uVFHbhGfjLIBjrGZj7TYuy6fE9MjRSXwl+OvLvvAn32sxI/V6+Ait6eiJyM9/z5csiBy/j7kTk4hNg==",
+  "dgSpecHash": "siUjGW2CA2QVhXO0Hi/N1Hj3fKbT54WQYYRv2QWQRjhNwY+L+Oh4a1KrSy93++ZMiIcL6gsHr6sJhKr/isWlag==",
   "success": true,
   "projectFilePath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Core.Tests\\Arya.Vis.Core.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dheer\\.nuget\\packages\\arya.exceptions\\0.4.0\\arya.exceptions.0.4.0.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\awssdk.cognitoidentityprovider\\3.3.109.25\\awssdk.cognitoidentityprovider.3.3.109.25.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\awssdk.core\\3.3.106.13\\awssdk.core.3.3.106.13.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql\\2.4.0\\graphql.2.4.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\graphql-parser\\3.0.0\\graphql-parser.3.0.0.nupkg.sha512",
