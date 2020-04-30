@@ -7,3 +7,12 @@ E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3
 E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.csproj.CoreCompileInputs.cache
 E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.dll
 E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.pdb
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Storage.dll
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.dll
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Vis.Core.dll
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\System.Reactive.dll
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Vis.Core.pdb
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Storage.pdb
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\Arya.Storage.MySql.pdb
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\bin\Debug\netcoreapp3.1\System.Reactive.xml
+E:\Leoforce\arya-vis\aryavisapicore\Arya.Vis.Container.Web\obj\Debug\netcoreapp3.1\Arya.Vis.Container.Web.csproj.CopyComplete

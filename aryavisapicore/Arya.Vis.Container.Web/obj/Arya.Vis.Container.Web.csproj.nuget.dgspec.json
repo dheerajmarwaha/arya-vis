@@ -26,7 +26,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
+                "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -57,6 +61,207 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
+        "projectName": "Arya.Vis.Core",
+        "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
+        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
+        "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj": {
+                "projectPath": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj"
+              },
+              "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
+                "projectPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Mailkit": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj",
+        "projectName": "Arya.Storage.MySql",
+        "projectPath": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj",
+        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
+        "outputPath": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
+                "projectPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Arya.Exceptions": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[0.63.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj",
+        "projectName": "Arya.Storage",
+        "projectPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj",
+        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
+        "outputPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

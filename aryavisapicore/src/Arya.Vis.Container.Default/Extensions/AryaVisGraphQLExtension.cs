@@ -22,16 +22,16 @@ namespace Arya.Vis.Container.Default.Extensions
                                                         , IWebHostEnvironment environment)
         {
             
-            services.AddSingleton <InterviewType>();
-            services.AddSingleton<InterviewQuery>();            
+            services.AddScoped<InterviewType>();
+            services.AddScoped<InterviewQuery>();            
 
-            services.AddSingleton<InterviewInputType>();
-            services.AddSingleton<InterviewMutation>();
+            services.AddScoped<InterviewInputType>();
+            services.AddScoped<InterviewMutation>();
 
-            services.AddSingleton<InterviewSchema>();
+            services.AddScoped<InterviewSchema>();
 
             //Register dependency resolver for GraphQL
-            services.AddSingleton<IDependencyResolver>(
+            services.AddScoped<IDependencyResolver>(
                 c=> new FuncDependencyResolver(type => c.GetRequiredService(type)));
 
             services.AddGraphQL(options =>

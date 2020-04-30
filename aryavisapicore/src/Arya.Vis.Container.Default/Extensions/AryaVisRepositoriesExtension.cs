@@ -11,11 +11,13 @@ namespace Arya.Vis.Container.Default.Extensions
     {
         public static IServiceCollection AddAryaVisRepositories(this IServiceCollection services, IConfiguration configuration) {
             // Register Db Provider
-            services.AddSingleton<ISqlProvider, MySqlProvider>(_ => {
+            services.AddScoped<ISqlProvider, MySqlProvider>(_ => {
                 return new MySqlProvider(configuration["ConnectionStrings:AryaVisConnection"]);
             });
-            services.AddSingleton<IUnitOfWork, UnitOfWork>();
-            services.AddSingleton<IInterviewRepository, InterviewRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IInterviewRepository, InterviewRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IOrganizationRepository, OrganizationRepository>();
 
             return services;
         }
