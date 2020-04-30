@@ -2,10 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
+[assembly: InternalsVisibleTo("Arya.Vis.Api.Tests")]
 namespace Arya.Vis.Api.Config
-{
+{    
     public class CognitoIAMCredentials
     {
         public string AccessKeyId { get; set; }
@@ -14,7 +16,7 @@ namespace Arya.Vis.Api.Config
 
         public string RegionEndpointSystemName { get; set; }
 
-        public RegionEndpoint RegionEndpoint
+        internal RegionEndpoint RegionEndpoint
         {
             get { return RegionEndpoint.GetBySystemName(RegionEndpointSystemName); }
         }

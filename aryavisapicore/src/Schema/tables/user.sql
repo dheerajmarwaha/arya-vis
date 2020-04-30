@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS user;
 CREATE TABLE user (
   UserGuId				BINARY  (16)  NOT NULL,
-  UserName				varchar(500) CHARACTER SET utf8 NOT NULL,
+  UserName				varchar(2000) CHARACTER SET utf8 NOT NULL,
   VendorId				varchar(100) NOT NULL,
   FirstName				varchar(1000) CHARACTER SET utf8 DEFAULT NULL,
   LastName				varchar(1000) CHARACTER SET utf8 DEFAULT NULL,
