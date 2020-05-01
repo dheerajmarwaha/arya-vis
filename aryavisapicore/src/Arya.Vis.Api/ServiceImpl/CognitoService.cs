@@ -59,7 +59,7 @@ namespace Arya.Vis.Api.ServiceImpl
             
             var currentUser = _userService.GetCurrentUser();
             //Set Audit Details
-            organizatonCreateCommand.CreatedByGuId = currentUser.CreatedByGuId;
+            organizatonCreateCommand.CreatedByGuId = currentUser.UserGuid;
 
             var trimmedOrgName = organizatonCreateCommand.OrganizationName.Replace(" ", "");
             organizatonCreateCommand.IdentityProviderIdentifier = trimmedOrgName;
@@ -81,7 +81,7 @@ namespace Arya.Vis.Api.ServiceImpl
             var currentUser = _userService.GetCurrentUser();
             await ValidateCreateUserRequest(orgGuid, user, password);
             user.Email = user.Email.ToLower();
-            user.CreatedByGuId = currentUser.CreatedByGuId;
+            user.CreatedByGuId = currentUser.UserGuid;
 
             var createUserRequest = new AdminCreateUserRequest
             {
@@ -173,6 +173,7 @@ namespace Arya.Vis.Api.ServiceImpl
             await ValidateUpdateUserRequestAsync(userGuid, user);
 
             var currentUser = _userService.GetCurrentUser();
+            user.ModifiedByGuId = currentUser.UserGuid;
             if (user.IsActive)
             {
                 var enableUserRequest = new AdminEnableUserRequest

@@ -235,4 +235,7 @@ E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreap
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\System.Reactive.xml
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\Moq.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\appsettings.test.json
 E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\obj\Debug\netcoreapp3.1\Arya.Vis.Api.Tests.csproj.CoreCompileInputs.cache
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.TestHost.dll
+E:\Leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll

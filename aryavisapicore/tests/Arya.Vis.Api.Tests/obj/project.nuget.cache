@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7NyP+ROpk3QSgANS/LMVjKj/N3Aa1SY7lMZRwmllasvN9tgvckP3VUiL94lrPS2Ye/YNaFZQREl0Zc7cV7ri+Q==",
+  "dgSpecHash": "N/Ra14wUtsvFZc14MtXi625567r/Qur8xSmnNtGX3NuAzgt1rkvKlRJa3UsTC+8EGrBFtHhIzcHzWpOa2mDt4A==",
   "success": true,
   "projectFilePath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Api.Tests\\Arya.Vis.Api.Tests.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\microsoft.aspnetcore.testhost\\3.1.3\\microsoft.aspnetcore.testhost.3.1.3.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.aspnetcore.websockets\\2.0.2\\microsoft.aspnetcore.websockets.2.0.2.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.4\\microsoft.codeanalysis.analyzers.2.9.4.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.1\\microsoft.codeanalysis.common.3.3.1.nupkg.sha512",
@@ -141,6 +142,7 @@
     "C:\\Users\\dheer\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\dheer\\.nuget\\packages\\system.io.pipelines\\4.7.1\\system.io.pipelines.4.7.1.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\dheer\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

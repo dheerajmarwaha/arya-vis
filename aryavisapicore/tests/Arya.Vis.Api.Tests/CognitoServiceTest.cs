@@ -25,8 +25,9 @@ namespace Arya.Vis.Api.Tests
         public CognitoServiceTest()
         {
             ConfigurationManager configurationManager = new ConfigurationManager("appsettings.test.json");
-            _cognitoIAMCredentials = configurationManager.Configuration.GetSection("AWSCognito").Get<IOptions<CognitoIAMCredentials>>();
-            _cognitoClientConfig = configurationManager.Configuration.GetSection("Authentication: Client").Get<IOptions<CognitoClientConfiguration>>();
+
+            _cognitoIAMCredentials = Options.Create(configurationManager.Configuration.GetSection("AWSCognito").Get<CognitoIAMCredentials>());
+            _cognitoClientConfig = Options.Create(configurationManager.Configuration.GetSection("Authentication: Client").Get<CognitoClientConfiguration>());
         }
         private CreateGroupResponse GetNonNullCreateGroupResponse()
         {
@@ -50,7 +51,9 @@ namespace Arya.Vis.Api.Tests
             var mockClient = new Mock<IAryaIdentityProviderClient>();
             var mockUserService = new Mock<IUserService>();
             var mockOrgService = new Mock<IOrganizationService>();
-            
+
+           
+
             var createGroupRequest = new CreateGroupRequest
             {
                 UserPoolId = It.IsAny<string>(),

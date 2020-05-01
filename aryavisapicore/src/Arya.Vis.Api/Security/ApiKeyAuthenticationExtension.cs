@@ -25,7 +25,10 @@ namespace Arya.Vis.Api.Security
                 {
                     options.AddApiKeyPolicy();
                 })
-                .AddAuthentication(ApiKeyAuthConstants.Scheme)
+                .AddAuthentication(options =>
+                {
+                    options.DefaultScheme = ApiKeyAuthConstants.Scheme;
+                })
                 .AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>(ApiKeyAuthConstants.Scheme, options =>
                 {
                     options.Events = new ApiKeyAuthenticationEvents

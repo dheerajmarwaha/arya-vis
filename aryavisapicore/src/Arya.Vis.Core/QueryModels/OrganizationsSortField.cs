@@ -6,7 +6,7 @@ namespace Arya.Vis.Core.QueryModels
 {
     public enum OrganizationsSortField
     {
-        Name,
+        OrganizationName,
         ModifiedDate,
         CreatedDate,
     }
