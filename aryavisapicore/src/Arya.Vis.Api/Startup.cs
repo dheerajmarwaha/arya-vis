@@ -20,6 +20,7 @@ using GraphQL.Server.Transports.WebSockets;
 using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
@@ -28,35 +29,46 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
+using RedLockNet;
 
-namespace Arya.Vis.Api {
-    public class Startup {
+namespace Arya.Vis.Api
+{
+    public class Startup
+    {
         public IWebHostEnvironment Environment { get; }
         public IConfiguration Configuration { get; }
 
-        public Startup (IConfiguration configuration, IWebHostEnvironment environment) {
+        public IDistributedLockFactory _distributedLockFactory;
+
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
+        {
             Environment = environment;
-            Configuration = configuration;            
+            Configuration = configuration;
         }
 
-        
-
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices (IServiceCollection services) {
+        public void ConfigureServices(IServiceCollection services)
+        {
             services.AddApiKeyAuthentication(Configuration, Environment)
-                .AddAryaAuthentication(Configuration, Environment)
-                .AddAryaVisDefault (Configuration, Environment);
+                    .AddAryaAuthentication(Configuration, Environment)
+                    .AddAryaVisDefault(Configuration, Environment);
 
             //register cognito service
             services.Configure<CognitoIAMCredentials>(Configuration.GetSection("AWSCognito"));
             services.Configure<CognitoClientConfiguration>(Configuration.GetSection("Authentication:Client"));
 
             services.AddScoped<IIdentityService, CognitoService>();
-            services.AddScoped<AmazonCognitoIdentityProviderClient>(provider => {
+
+            services.AddScoped<AmazonCognitoIdentityProviderClient>(provider =>
+            {
                 var config = provider.GetRequiredService<IOptions<CognitoIAMCredentials>>();
                 return new AmazonCognitoIdentityProviderClient(config.Value.AccessKeyId, config.Value.SecretAccessKey, config.Value.RegionEndpoint);
             });
-            services.AddScoped<IAryaIdentityProviderClient, AryaCognitoIdentityProviderClient>(provider => {
+
+            services.AddScoped<IAryaIdentityProviderClient, AryaCognitoIdentityProviderClient>(provider =>
+            {
                 var cognitoClient = provider.GetRequiredService<AmazonCognitoIdentityProviderClient>();
                 return new AryaCognitoIdentityProviderClient(cognitoClient);
             });
@@ -70,10 +82,11 @@ namespace Arya.Vis.Api {
             {
                 options.AllowSynchronousIO = true;
             });
-            services.AddControllers ();
+            services.AddControllers();
 
             // Configure CORS
-            services.AddCors(options => {
+            services.AddCors(options =>
+            {
                 options.AddPolicy("CorsPolicy",
                     builder => builder
                     .SetIsOriginAllowed(host => true)
@@ -83,29 +96,70 @@ namespace Arya.Vis.Api {
                     .Build()
                 );
             });
+
+            services.AddMvc()
+                    .AddNewtonsoftJson(options =>
+                    {
+                        options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                        options.SerializerSettings.Converters.Add(new StringEnumConverter());
+                        options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+                    })
+                    .AddXmlDataContractSerializerFormatters();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure (IApplicationBuilder app, IWebHostEnvironment env) {
-            if (env.IsDevelopment ()) {
-                app.UseDeveloperExceptionPage ();
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHostApplicationLifetime appLifetime, IDistributedLockFactory distributedLockFactory)
+        {
+            _distributedLockFactory = distributedLockFactory;
+            
+            app.UseAuthentication();
+            
+            app.UseGlobalExceptionHandler();
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
 
                 app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
             }
+            else
+            {
+                app.UseHsts();
+            }
+            appLifetime.ApplicationStopping.Register(OnShutdown);
 
-            app.UseHttpsRedirection ();
+            app.UseRequestTimeLogger();
 
-            app.UseRouting ();
+            app.UseCors("CorsPolicy");
+
+            app.UseHttpsRedirection();
+
+            app.UseForwardedHeaders(new ForwardedHeadersOptions { 
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor |
+                                   ForwardedHeaders.XForwardedProto
+            });
+
+            app.UseSystemConfiguration();
+
+            app.LoadCurrentUser();
+
+            app.UseRouting();
 
             app.UseWebSockets();
             app.UseGraphQLWebSockets<InterviewSchema>();
             app.UseGraphQL<InterviewSchema>();
-            
-            app.UseAuthorization ();
 
-            app.UseEndpoints (endpoints => {
-                endpoints.MapControllers ();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
             });
+        }
+
+        private void OnShutdown()
+        {
+            (_distributedLockFactory as IDisposable).Dispose();
         }
     }
 }

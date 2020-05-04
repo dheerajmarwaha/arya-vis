@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Arya.Exceptions;
 using Arya.Vis.Core.Exceptions;
 
 namespace Arya.Vis.Core.Utils

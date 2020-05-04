@@ -2,8 +2,8 @@ DROP TABLE IF EXISTS org_feature_toggles;
 CREATE TABLE `org_feature_toggles` (
    FeatureGuid 	binary(16) NOT NULL,
    OrgGuId		BINARY  (16) NOT NULL,
-   `is_allowed` bit(1) NOT NULL DEFAULT b'0',
-   `is_enabled` bit(1) DEFAULT b'1',
+   `IsAllowed` bit(1) NOT NULL DEFAULT b'0',
+   `IsEnabled` bit(1) DEFAULT b'1',
    PRIMARY KEY (`FeatureGuid`,`OrgGuId`),
    UNIQUE KEY `unique_org_feature` (`OrgGuId`,`FeatureGuid`),
    KEY `idx_org` (`OrgGuId`),

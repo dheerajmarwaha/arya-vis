@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj": {}
+    "C:\\leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj": {}
   },
   "projects": {
-    "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
+    "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
+        "projectUniqueName": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
         "projectName": "Arya.Vis.Core",
-        "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
-        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
-        "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\obj\\",
+        "projectPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj",
+        "packagesPath": "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\",
+        "outputPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dheeraj.marwaha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj": {
-                "projectPath": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj"
+              "C:\\leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj": {
+                "projectPath": "C:\\leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj"
               },
-              "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
-                "projectPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj"
+              "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
+                "projectPath": "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj"
               }
             }
           }
@@ -53,6 +53,26 @@
               "target": "Package",
               "version": "[2.6.0, )"
             },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
             "System.ComponentModel.Annotations": {
               "target": "Package",
               "version": "[4.7.0, )"
@@ -73,9 +93,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -84,17 +101,17 @@
         }
       }
     },
-    "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj": {
+    "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
+        "projectUniqueName": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
         "projectName": "Arya.Vis.Gateway.EmailProvider",
-        "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
-        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
-        "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\obj\\",
+        "projectPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
+        "packagesPath": "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\",
+        "outputPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dheeraj.marwaha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,8 +124,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
-                "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj"
+              "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
+                "projectPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj"
               }
             }
           }
@@ -142,9 +159,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -153,17 +167,17 @@
         }
       }
     },
-    "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj": {
+    "C:\\leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj",
+        "projectUniqueName": "C:\\leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj",
         "projectName": "Arya.Vis.Gateway.EmailProvider.Tests",
-        "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj",
-        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
-        "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\obj\\",
+        "projectPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj",
+        "packagesPath": "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\",
+        "outputPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dheeraj.marwaha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,8 +190,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj": {
-                "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj"
+              "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj": {
+                "projectPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj"
               }
             }
           }
@@ -227,9 +241,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -238,17 +249,105 @@
         }
       }
     },
-    "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj": {
-      "version": "1.0.0",
+    "C:\\leoforce\\arya.exceptions\\src\\Arya.Exceptions\\Arya.Exceptions.csproj": {
+      "version": "0.4.0",
       "restore": {
-        "projectUniqueName": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj",
-        "projectName": "Arya.Storage.MySql",
-        "projectPath": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj",
-        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
-        "outputPath": "E:\\Leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\obj\\",
+        "projectUniqueName": "C:\\leoforce\\arya.exceptions\\src\\Arya.Exceptions\\Arya.Exceptions.csproj",
+        "projectName": "Arya.Exceptions",
+        "projectPath": "C:\\leoforce\\arya.exceptions\\src\\Arya.Exceptions\\Arya.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\",
+        "outputPath": "C:\\leoforce\\arya.exceptions\\src\\Arya.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dheeraj.marwaha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0",
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          },
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        },
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "C:\\leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj",
+        "projectName": "Arya.Storage.MySql",
+        "projectPath": "C:\\leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\Arya.Storage.MySql.csproj",
+        "packagesPath": "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\",
+        "outputPath": "C:\\leoforce\\arya.storage.mysql\\src\\Arya.Storage.MySql\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\dheeraj.marwaha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -261,8 +360,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
-                "projectPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj"
+              "C:\\leoforce\\arya.exceptions\\src\\Arya.Exceptions\\Arya.Exceptions.csproj": {
+                "projectPath": "C:\\leoforce\\arya.exceptions\\src\\Arya.Exceptions\\Arya.Exceptions.csproj"
+              },
+              "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
+                "projectPath": "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj"
               }
             }
           }
@@ -276,10 +378,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Arya.Exceptions": {
-              "target": "Package",
-              "version": "[0.4.0, )"
-            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[0.63.2, )"
@@ -296,9 +394,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -307,17 +402,18 @@
         }
       }
     },
-    "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
-      "version": "1.0.0",
+    "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj": {
+      "version": "0.3.0",
       "restore": {
-        "projectUniqueName": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj",
+        "projectUniqueName": "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj",
         "projectName": "Arya.Storage",
-        "projectPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj",
-        "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
-        "outputPath": "E:\\Leoforce\\arya.storage\\src\\Arya.Storage\\obj\\",
+        "projectPath": "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\Arya.Storage.csproj",
+        "packagesPath": "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\",
+        "outputPath": "C:\\leoforce\\arya.storage\\src\\Arya.Storage\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dheeraj.marwaha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

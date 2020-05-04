@@ -58,10 +58,10 @@ CREATE TABLE mstorganization (
 	IdentityProviderIdentifier varchar(255) DEFAULT NULL,
 
 	-- Audit details
-	CreatedByGuId			BINARY  (16) DEFAULT NULL,
+	CreatedByGuid			BINARY  (16) DEFAULT NULL,
 	CreatedDate				datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	ModifiedByGuId			BINARY  (16) DEFAULT NULL,
+	ModifiedByGuid			BINARY  (16) DEFAULT NULL,
 	ModifiedDate			datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,   
 
-	PRIMARY KEY (OrgGuId)
+	PRIMARY KEY (OrgGuid)
 ) ENGINE=InnoDB AUTO_INCREMENT=2550 DEFAULT CHARSET=latin1

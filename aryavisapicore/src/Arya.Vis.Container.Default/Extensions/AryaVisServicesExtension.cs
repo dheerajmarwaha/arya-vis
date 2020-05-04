@@ -7,6 +7,10 @@ namespace Arya.Vis.Container.Default.Extensions
     public static class AryaVisServicesExtension
     {
         public static IServiceCollection AddAryaVisServices(this IServiceCollection services, IConfiguration configuration) {
+            services.AddScoped<IAccessService, AccessService>();
+            services.AddScoped<ISystemConfigurationService, SystemConfigurationService>();
+            services.AddScoped<IConfigurationService, ConfigurationService>();
+
             services.AddScoped<IInterviewService, InterviewService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IOrganizationService, OrganizationService>();

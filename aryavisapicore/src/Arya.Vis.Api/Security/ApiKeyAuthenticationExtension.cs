@@ -1,5 +1,6 @@
 ﻿using Arya.Vis.Container.Web.Security;
 using Arya.Vis.Core.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,14 +22,15 @@ namespace Arya.Vis.Api.Security
         {
             services.Configure<ApiKeyAuthConfig>(configuration.GetSection("Authentication:ApiKey"));
             services
-                .AddAuthorization(options =>
+                .AddAuthorization(authorizationOptions =>
                 {
-                    options.AddApiKeyPolicy();
+                    authorizationOptions.AddApiKeyPolicy();
                 })
                 .AddAuthentication(options =>
                 {
                     options.DefaultScheme = ApiKeyAuthConstants.Scheme;
-                })
+                }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)              
+             
                 .AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>(ApiKeyAuthConstants.Scheme, options =>
                 {
                     options.Events = new ApiKeyAuthenticationEvents
@@ -44,16 +46,8 @@ namespace Arya.Vis.Api.Security
                             if (isAuthenticated)
                             {
                                 var claims = new[] {
-                                    new Claim(
-                                    ClaimTypes.NameIdentifier,
-                                    user.UserGuid.ToString(),
-                                    ClaimValueTypes.String,
-                                    context.Options.ClaimsIssuer),
-                                    new Claim(
-                                    ClaimTypes.Name,
-                                    user.UserGuid.ToString(),
-                                    ClaimValueTypes.String,
-                                    context.Options.ClaimsIssuer)
+                                    new Claim(ClaimTypes.NameIdentifier, user.UserGuid.ToString(), ClaimValueTypes.String, context.Options.ClaimsIssuer),
+                                    new Claim(ClaimTypes.Name,user.UserGuid.ToString(),ClaimValueTypes.String,context.Options.ClaimsIssuer)
                                 };
 
                                 context.Principal = new ClaimsPrincipal(

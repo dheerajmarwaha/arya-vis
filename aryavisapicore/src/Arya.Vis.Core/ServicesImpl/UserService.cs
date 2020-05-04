@@ -28,9 +28,9 @@ namespace Arya.Vis.Core.ServicesImpl
             //IEventBus eventBus
             )
         {
-            _logger = logger;
-            _unitOfWork = unitOfWork;
-            _userRepository = userRepository;
+            _logger = logger?? throw new ArgumentNullException(nameof(logger));
+            _unitOfWork = unitOfWork ?? throw new ArgumentNullException(nameof(unitOfWork));
+            _userRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
             //_eventBus = eventBus;
         }
 

@@ -10,6 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using Arya.Exceptions;
 
 namespace Arya.Vis.Core.ServicesImpl
 {

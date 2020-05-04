@@ -35,6 +35,14 @@ namespace Arya.Vis.Repository
 
         public const string GetUnregisteredUserDetails = "v3_get_unregistered_user_details";
 
+        /* User Configuration */
+        public const string GetUserConfigurations = "v3_get_user_configurations";
+
+        public const string PatchUserConfiguration = "v3_patch_user_configuration";
+
+        public const string UpdateUserConfiguration = "v3_update_user_configuration";
+
+
         /* Organization */
         public const string CreateOrganization = "v3_insert_organization";
 
@@ -47,5 +55,17 @@ namespace Arya.Vis.Repository
         public const string GetOrganizations = "v3_get_organizations_list";
 
         public const string GetBulkOrganizationStats = "v3_get_bulk_organization_stats";
+
+        /* System Configuration */
+        public const string GetSystemConfiguration = "v3_get_system_configuration";
+
+        public const string GetOrganizationConfiguration = "v3_get_organization_configuration";
+
+        public const string UpdateOrganizationConfiguration = "v3_update_organization_configuration";
+
+
+
+        /* Features */
+        public const string GetAllowedFeatures = "v3_get_allowed_features";
     }
 }

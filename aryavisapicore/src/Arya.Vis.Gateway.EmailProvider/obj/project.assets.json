@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Arya.Exceptions/0.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/Arya.Exceptions.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Arya.Exceptions.dll": {}
-        }
-      },
       "GraphQL/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -117,6 +108,32 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration.FileExtensions/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.3",
+          "Microsoft.Extensions.FileProviders.Physical": "3.1.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.3",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/3.1.3": {
         "type": "package",
         "dependencies": {
@@ -136,6 +153,40 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.3",
+          "Microsoft.Extensions.FileSystemGlobbing": "3.1.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/3.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/3.1.3": {
@@ -1892,7 +1943,17 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Arya.Storage/1.0.0": {
+      "Arya.Exceptions/0.4.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Arya.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Arya.Exceptions.dll": {}
+        }
+      },
+      "Arya.Storage/0.3.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
@@ -1902,12 +1963,12 @@
           "bin/placeholder/Arya.Storage.dll": {}
         }
       },
-      "Arya.Storage.MySql/1.0.0": {
+      "Arya.Storage.MySql/0.3.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Arya.Exceptions": "0.4.0",
-          "Arya.Storage": "1.0.0",
+          "Arya.Storage": "0.3.0",
           "MySqlConnector": "0.63.2"
         },
         "compile": {
@@ -1915,19 +1976,21 @@
         },
         "runtime": {
           "bin/placeholder/Arya.Storage.MySql.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "Arya.Vis.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Arya.Storage": "1.0.0",
-          "Arya.Storage.MySql": "1.0.0",
+          "Arya.Storage": "0.3.0",
+          "Arya.Storage.MySql": "0.3.0",
           "GraphQL": "2.4.0",
           "Mailkit": "2.6.0",
+          "Microsoft.Extensions.Configuration": "3.1.3",
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.3",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.3",
+          "Microsoft.Extensions.Configuration.Json": "3.1.3",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.3",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Reactive": "4.4.1"
         },
@@ -1936,27 +1999,11 @@
         },
         "runtime": {
           "bin/placeholder/Arya.Vis.Core.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
   "libraries": {
-    "Arya.Exceptions/0.4.0": {
-      "sha512": "79cVZeYggjB4wKIBt+qYbNmZN6u5F011lZSJdWZb9KAPkIAd5ratvnwIIkH8JHYNdzV9DpVPVvzYKQ5REx50Ng==",
-      "type": "package",
-      "path": "arya.exceptions/0.4.0",
-      "files": [
-        ".nupkg.metadata",
-        "arya.exceptions.0.4.0.nupkg.sha512",
-        "arya.exceptions.nuspec",
-        "lib/netcoreapp3.0/Arya.Exceptions.dll",
-        "lib/netcoreapp3.1/Arya.Exceptions.dll",
-        "lib/netstandard2.0/Arya.Exceptions.dll"
-      ]
-    },
     "GraphQL/2.4.0": {
       "sha512": "TMCyq9hB4rEyjZrI61BCtFIRUYfV+c3WrydeWefg4mOn4kVNRPDHTb2KtZrWbIlDriY6u5Dze0FkpXs4RlYVzQ==",
       "type": "package",
@@ -2121,6 +2168,38 @@
         "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
+    "Microsoft.Extensions.Configuration.FileExtensions/3.1.3": {
+      "sha512": "elAAhku4duLMFnoambYY3VUp6AWHkMYu1j9ctWQkSfsCPwx9FlQ8luk4LS5oMQmOT0eY8E0zWG8jZM60GXIyNA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.3.1.3.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/3.1.3": {
+      "sha512": "E26XwzU3Y+J4etuXwX0ScOxNwuBdifU/BGM0nI/GwY7SjvVkkBQDgYphUcujaiAZWJ7h7yh1KL9tBAMPgGthqg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.3.1.3.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection/3.1.3": {
       "sha512": "H/d/jt4Pdp2iYx28shLkxfgQpk9S7cCCTEjtS/61PbZcFAT/mc4cemmOlBdED7+CqmEAIDg8X4Fo0KtADaNizg==",
       "type": "package",
@@ -2153,6 +2232,52 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/3.1.3": {
+      "sha512": "vr1V6dj8NONgaTA/EdlwtJOaNXRBf6f/din15pkWM/RfTbdoqrr0mKcTRx4MD/AGwxgM0+G2rUT2pDQGa2tNtA==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.3.1.3.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/3.1.3": {
+      "sha512": "CvCLmVfb90Wkm99Ho6izWoZ9WaY/SQbou0LSEvBQxKk0IPAWKfUw29QLqlszIkXp81VR1BwdprlGKFdFfZpZFA==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.3.1.3.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/3.1.3": {
+      "sha512": "bAmmKRNZM7n7cEhmdywgfvd53MF8pUL9u6orliWvJmI3tQCuDaJalNr4z9FfMu/e6Baw5NTSV+ZsWdWIiOi1Rw==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.3.1.3.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging/3.1.3": {
@@ -6722,12 +6847,17 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Arya.Storage/1.0.0": {
+    "Arya.Exceptions/0.4.0": {
+      "type": "project",
+      "path": "../../../../arya.exceptions/src/Arya.Exceptions/Arya.Exceptions.csproj",
+      "msbuildProject": "../../../../arya.exceptions/src/Arya.Exceptions/Arya.Exceptions.csproj"
+    },
+    "Arya.Storage/0.3.0": {
       "type": "project",
       "path": "../../../../arya.storage/src/Arya.Storage/Arya.Storage.csproj",
       "msbuildProject": "../../../../arya.storage/src/Arya.Storage/Arya.Storage.csproj"
     },
-    "Arya.Storage.MySql/1.0.0": {
+    "Arya.Storage.MySql/0.3.0": {
       "type": "project",
       "path": "../../../../arya.storage.mysql/src/Arya.Storage.MySql/Arya.Storage.MySql.csproj",
       "msbuildProject": "../../../../arya.storage.mysql/src/Arya.Storage.MySql/Arya.Storage.MySql.csproj"
@@ -6746,19 +6876,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dheer\\.nuget\\packages\\": {}
+    "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
+      "projectUniqueName": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
       "projectName": "Arya.Vis.Gateway.EmailProvider",
-      "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
-      "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
-      "outputPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\obj\\",
+      "projectPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\Arya.Vis.Gateway.EmailProvider.csproj",
+      "packagesPath": "C:\\Users\\dheeraj.marwaha\\.nuget\\packages\\",
+      "outputPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Gateway.EmailProvider\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dheeraj.marwaha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6771,8 +6901,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
-              "projectPath": "E:\\Leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj"
+            "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj": {
+              "projectPath": "C:\\leoforce\\arya-vis\\aryavisapicore\\src\\Arya.Vis.Core\\Arya.Vis.Core.csproj"
             }
           }
         }
@@ -6806,9 +6936,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

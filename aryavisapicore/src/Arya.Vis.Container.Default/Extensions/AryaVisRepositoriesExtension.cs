@@ -19,6 +19,12 @@ namespace Arya.Vis.Container.Default.Extensions
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IOrganizationRepository, OrganizationRepository>();
 
+            services.AddScoped<IAccessRepository, AccessRepository>();
+            services.AddScoped<ISystemConfigurationRepository, SystemConfigurationRepository>();
+
+            services.AddScoped<IConfigurationRepository, ConfigurationRepository>();
+
+
             return services;
         }
     }

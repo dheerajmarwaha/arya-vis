@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "Arya.Vis.Container.Default/1.0.0": {
         "dependencies": {
-          "Arya.Storage": "1.0.0",
-          "Arya.Storage.MySql": "1.0.0",
+          "Arya.Storage": "0.3.0",
+          "Arya.Storage.MySql": "0.3.0",
           "Arya.Vis.Repository": "1.0.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
           "GraphQL.Server.Transports.WebSockets": "3.4.0",
@@ -22,14 +22,6 @@
         },
         "runtime": {
           "Arya.Vis.Container.Default.dll": {}
-        }
-      },
-      "Arya.Exceptions/0.4.0": {
-        "runtime": {
-          "lib/netcoreapp3.1/Arya.Exceptions.dll": {
-            "assemblyVersion": "0.4.0.0",
-            "fileVersion": "0.4.0.0"
-          }
         }
       },
       "GraphQL/2.4.0": {
@@ -185,6 +177,17 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.0.2",
           "Microsoft.Extensions.Options": "3.1.3",
           "System.Numerics.Vectors": "4.4.0"
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/3.1.3": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12802"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/3.1.3": {
@@ -1452,15 +1455,20 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Arya.Storage/1.0.0": {
+      "Arya.Exceptions/0.4.0": {
+        "runtime": {
+          "Arya.Exceptions.dll": {}
+        }
+      },
+      "Arya.Storage/0.3.0": {
         "runtime": {
           "Arya.Storage.dll": {}
         }
       },
-      "Arya.Storage.MySql/1.0.0": {
+      "Arya.Storage.MySql/0.3.0": {
         "dependencies": {
           "Arya.Exceptions": "0.4.0",
-          "Arya.Storage": "1.0.0",
+          "Arya.Storage": "0.3.0",
           "MySqlConnector": "0.63.2"
         },
         "runtime": {
@@ -1469,10 +1477,15 @@
       },
       "Arya.Vis.Core/1.0.0": {
         "dependencies": {
-          "Arya.Storage": "1.0.0",
-          "Arya.Storage.MySql": "1.0.0",
+          "Arya.Storage": "0.3.0",
+          "Arya.Storage.MySql": "0.3.0",
           "GraphQL": "2.4.0",
           "MailKit": "2.6.0",
+          "Microsoft.Extensions.Configuration": "3.1.3",
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.3",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.3",
+          "Microsoft.Extensions.Configuration.Json": "3.1.3",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.3",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Reactive": "4.4.1"
         },
@@ -1482,9 +1495,10 @@
       },
       "Arya.Vis.Repository/1.0.0": {
         "dependencies": {
-          "Arya.Storage": "1.0.0",
-          "Arya.Storage.MySql": "1.0.0",
+          "Arya.Storage": "0.3.0",
+          "Arya.Storage.MySql": "0.3.0",
           "Arya.Vis.Core": "1.0.0",
+          "Microsoft.Extensions.Caching.Abstractions": "3.1.3",
           "Microsoft.Extensions.Logging.Abstractions": "3.1.3"
         },
         "runtime": {
@@ -1507,13 +1521,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Arya.Exceptions/0.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-79cVZeYggjB4wKIBt+qYbNmZN6u5F011lZSJdWZb9KAPkIAd5ratvnwIIkH8JHYNdzV9DpVPVvzYKQ5REx50Ng==",
-      "path": "arya.exceptions/0.4.0",
-      "hashPath": "arya.exceptions.0.4.0.nupkg.sha512"
-    },
     "GraphQL/2.4.0": {
       "type": "package",
       "serviceable": true,
@@ -1531,21 +1538,21 @@
     "GraphQL.Server.Core/3.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Chn/zrq/VcKpx9dYIQSx1LM7mWQhYnDzoRlbW+KWQ30GJaV5XpIZiZbt6MxusZGh7fTlRoPS0HQaoKyRk0gLfw==",
+      "sha512": "sha512-8Licj3eNNponglRLr1GfcoVO1wEIXOUPBuF7iFLmEvgGeaH0ta95bnJbi7/0qUESF1U+PbdstP7Z9SC++QNHOQ==",
       "path": "graphql.server.core/3.4.0",
       "hashPath": "graphql.server.core.3.4.0.nupkg.sha512"
     },
     "GraphQL.Server.Transports.AspNetCore/3.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-P2c5iSU8vrYGxnFRNVoquJNyC/bo8OE0FjSIDbb7rHgSkKBDLyirgzGtaG35xSVlqd8T2HdFhZdmVFxlm8G//A==",
+      "sha512": "sha512-5ylKHdjGwwbv5RqoEfy2avJ78ptv6SIPu0xzReWHkFu1i/AnzcsihTNMGXgIBff2/S9KjxxUZY5cGxcRrTr5lA==",
       "path": "graphql.server.transports.aspnetcore/3.4.0",
       "hashPath": "graphql.server.transports.aspnetcore.3.4.0.nupkg.sha512"
     },
     "GraphQL.Server.Transports.Subscriptions.Abstractions/3.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BSmZomUajFBwDL742goyw9orb+H4hBtbQKW57OQV0XD/ySCO8kzxZqedAtCsiPMxiIeZbjRck1rsEnCJmbWnpw==",
+      "sha512": "sha512-Cwua3W2VM/PAZPmtdOaHlJOawkR/jR3G75QwhyleWEjcsEHaUrVY/hcvO1la+ZnJ6688tEbCkRnUUEF5a5RS/w==",
       "path": "graphql.server.transports.subscriptions.abstractions/3.4.0",
       "hashPath": "graphql.server.transports.subscriptions.abstractions.3.4.0.nupkg.sha512"
     },
@@ -1611,6 +1618,13 @@
       "sha512": "sha512-VUZCI/lAfPNU3KneT6xezPnUDUPnP0RzAFAcR+zNebBQ584STXLgy04PSeKMy5UgUzihln5N8xLLfM7bZSHlvQ==",
       "path": "microsoft.aspnetcore.websockets/2.0.2",
       "hashPath": "microsoft.aspnetcore.websockets.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jWyuPd4HqWT0rEjoCnG/7OB/KcYbIBa0z7TS6eWytTwrbjT2/pnp+LUYUZAqc9ppSZFf2u2gFYQ7RFS3UU+vEw==",
+      "path": "microsoft.extensions.caching.abstractions/3.1.3",
+      "hashPath": "microsoft.extensions.caching.abstractions.3.1.3.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/3.1.3": {
       "type": "package",
@@ -2564,12 +2578,17 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Arya.Storage/1.0.0": {
+    "Arya.Exceptions/0.4.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Arya.Storage.MySql/1.0.0": {
+    "Arya.Storage/0.3.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Arya.Storage.MySql/0.3.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
