@@ -258,3 +258,5 @@ C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\b
 C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Arya.ServiceBus.dll
+C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Gateway.EmailProvider.Tests\bin\Debug\netcoreapp3.1\Arya.ServiceBus.pdb

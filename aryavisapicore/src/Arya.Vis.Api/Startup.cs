@@ -143,6 +143,10 @@ namespace Arya.Vis.Api
 
             app.LoadCurrentUser();
 
+            app.UseAryaEventBus();
+
+            app.UseAryaVisHeaderSettings();
+
             app.UseRouting();
 
             app.UseWebSockets();

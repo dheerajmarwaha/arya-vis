@@ -17,8 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Arya.ServiceBus\src\Arya.ServiceBus\Arya.ServiceBus.csproj" />
     <ProjectReference Include="..\..\..\..\arya.storage.mysql\src\Arya.Storage.MySql\Arya.Storage.MySql.csproj" />
     <ProjectReference Include="..\..\..\..\arya.storage\src\Arya.Storage\Arya.Storage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EventHandlers\" />
   </ItemGroup>
 
 </Project>

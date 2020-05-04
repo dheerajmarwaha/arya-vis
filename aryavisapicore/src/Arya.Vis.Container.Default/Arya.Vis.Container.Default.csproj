@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Arya.ServiceBus\src\Arya.ServiceBus\Arya.ServiceBus.csproj" />
     <ProjectReference Include="..\..\..\..\arya.storage.mysql\src\Arya.Storage.MySql\Arya.Storage.MySql.csproj">
       <Private>true</Private>
     </ProjectReference>

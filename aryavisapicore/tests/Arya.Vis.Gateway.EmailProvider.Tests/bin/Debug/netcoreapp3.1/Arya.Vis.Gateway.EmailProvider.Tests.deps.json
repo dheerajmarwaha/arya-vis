@@ -1584,6 +1584,11 @@
           "Arya.Exceptions.dll": {}
         }
       },
+      "Arya.ServiceBus/0.2.0": {
+        "runtime": {
+          "Arya.ServiceBus.dll": {}
+        }
+      },
       "Arya.Storage/0.3.0": {
         "runtime": {
           "Arya.Storage.dll": {}
@@ -1601,6 +1606,7 @@
       },
       "Arya.Vis.Core/1.0.0": {
         "dependencies": {
+          "Arya.ServiceBus": "0.2.0",
           "Arya.Storage": "0.3.0",
           "Arya.Storage.MySql": "0.3.0",
           "GraphQL": "2.4.0",
@@ -2610,6 +2616,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
     },
     "Arya.Exceptions/0.4.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Arya.ServiceBus/0.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

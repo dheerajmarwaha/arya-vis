@@ -2367,6 +2367,16 @@
           "bin/placeholder/Arya.Exceptions.dll": {}
         }
       },
+      "Arya.ServiceBus/0.2.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Arya.ServiceBus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Arya.ServiceBus.dll": {}
+        }
+      },
       "Arya.Storage/0.3.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2396,6 +2406,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Arya.ServiceBus": "0.2.0",
           "Arya.Storage": "0.3.0",
           "Arya.Storage.MySql": "0.3.0",
           "GraphQL": "2.4.0",
@@ -7848,6 +7859,11 @@
       "type": "project",
       "path": "../../../../arya.exceptions/src/Arya.Exceptions/Arya.Exceptions.csproj",
       "msbuildProject": "../../../../arya.exceptions/src/Arya.Exceptions/Arya.Exceptions.csproj"
+    },
+    "Arya.ServiceBus/0.2.0": {
+      "type": "project",
+      "path": "../../../../Arya.ServiceBus/src/Arya.ServiceBus/Arya.ServiceBus.csproj",
+      "msbuildProject": "../../../../Arya.ServiceBus/src/Arya.ServiceBus/Arya.ServiceBus.csproj"
     },
     "Arya.Storage/0.3.0": {
       "type": "project",

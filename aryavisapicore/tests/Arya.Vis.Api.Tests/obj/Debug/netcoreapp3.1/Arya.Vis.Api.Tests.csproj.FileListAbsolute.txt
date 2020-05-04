@@ -504,3 +504,5 @@ C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreap
 C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\Arya.ServiceBus.dll
+C:\leoforce\arya-vis\aryavisapicore\tests\Arya.Vis.Api.Tests\bin\Debug\netcoreapp3.1\Arya.ServiceBus.pdb

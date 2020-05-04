@@ -2808,6 +2808,11 @@
           "Arya.Exceptions.dll": {}
         }
       },
+      "Arya.ServiceBus/0.2.0": {
+        "runtime": {
+          "Arya.ServiceBus.dll": {}
+        }
+      },
       "Arya.Storage/0.3.0": {
         "runtime": {
           "Arya.Storage.dll": {}
@@ -2847,6 +2852,7 @@
       },
       "Arya.Vis.Container.Default/1.0.0": {
         "dependencies": {
+          "Arya.ServiceBus": "0.2.0",
           "Arya.Storage": "0.3.0",
           "Arya.Storage.MySql": "0.3.0",
           "Arya.Vis.Repository": "1.0.0",
@@ -2864,6 +2870,8 @@
       },
       "Arya.Vis.Container.Web/1.0.0": {
         "dependencies": {
+          "Arya.ServiceBus": "0.2.0",
+          "Arya.Vis.Container.Default": "1.0.0",
           "Arya.Vis.Core": "1.0.0",
           "Arya.Vis.Repository": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.3"
@@ -2874,6 +2882,7 @@
       },
       "Arya.Vis.Core/1.0.0": {
         "dependencies": {
+          "Arya.ServiceBus": "0.2.0",
           "Arya.Storage": "0.3.0",
           "Arya.Storage.MySql": "0.3.0",
           "GraphQL": "2.4.0",
@@ -4627,6 +4636,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
     },
     "Arya.Exceptions/0.4.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Arya.ServiceBus/0.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

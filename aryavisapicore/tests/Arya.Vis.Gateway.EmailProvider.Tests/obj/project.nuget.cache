@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SQRODucqBAAiX/z71+BvEKKn2yWMfUsO9exIOD2ISp4L7YtE8YNE6gMuQmojOuw3aUtDaAvFVaDzhrMjiyRKdA==",
+  "dgSpecHash": "dYSJBKkP9AS5kAhMNkuhVWCgX6haUJJGDPdQAZEPzJrRwc0PEgrZPcNEEitedfw3W9+xGPoEmE4Bc3TsmYruyQ==",
   "success": true,
   "projectFilePath": "C:\\leoforce\\arya-vis\\aryavisapicore\\tests\\Arya.Vis.Gateway.EmailProvider.Tests\\Arya.Vis.Gateway.EmailProvider.Tests.csproj",
   "expectedPackageFiles": [

@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Storage", "..\..\arya.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Storage.MySql", "..\..\arya.storage.mysql\src\Arya.Storage.MySql\Arya.Storage.MySql.csproj", "{F2EB8A56-19D6-42EB-992B-885029365905}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Vis.Container.Web", "Arya.Vis.Container.Web\Arya.Vis.Container.Web.csproj", "{CC21B115-D4C6-475A-B0C2-3E2A70D70857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Vis.Container.Web", "src\Arya.Vis.Container.Web\Arya.Vis.Container.Web.csproj", "{CC21B115-D4C6-475A-B0C2-3E2A70D70857}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Exceptions", "..\..\arya.exceptions\src\Arya.Exceptions\Arya.Exceptions.csproj", "{B7063240-EEB6-48FE-A978-E5BD3FE7661D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.ServiceBus", "..\..\Arya.ServiceBus\src\Arya.ServiceBus\Arya.ServiceBus.csproj", "{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +187,18 @@ Global
 		{B7063240-EEB6-48FE-A978-E5BD3FE7661D}.Release|x64.Build.0 = Release|Any CPU
 		{B7063240-EEB6-48FE-A978-E5BD3FE7661D}.Release|x86.ActiveCfg = Release|Any CPU
 		{B7063240-EEB6-48FE-A978-E5BD3FE7661D}.Release|x86.Build.0 = Release|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Debug|x64.Build.0 = Debug|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Debug|x86.Build.0 = Debug|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|x64.ActiveCfg = Release|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|x64.Build.0 = Release|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|x86.ActiveCfg = Release|Any CPU
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,6 +216,7 @@ Global
 		{F2EB8A56-19D6-42EB-992B-885029365905} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
 		{CC21B115-D4C6-475A-B0C2-3E2A70D70857} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
 		{B7063240-EEB6-48FE-A978-E5BD3FE7661D} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
+		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76146101-51D1-4C0D-B256-A6014577073B}

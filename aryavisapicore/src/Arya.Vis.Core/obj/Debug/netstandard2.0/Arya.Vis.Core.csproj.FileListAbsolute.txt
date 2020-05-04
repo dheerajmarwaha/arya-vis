@@ -1,9 +1,0 @@
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netstandard2.0\Arya.Vis.Core.csprojAssemblyReference.cache
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netstandard2.0\Arya.Vis.Core.csproj.CoreCompileInputs.cache
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netstandard2.0\Arya.Vis.Core.AssemblyInfoInputs.cache
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netstandard2.0\Arya.Vis.Core.AssemblyInfo.cs
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\bin\Debug\netstandard2.0\Arya.Vis.Core.deps.json
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\bin\Debug\netstandard2.0\Arya.Vis.Core.dll
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\bin\Debug\netstandard2.0\Arya.Vis.Core.pdb
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netstandard2.0\Arya.Vis.Core.dll
-E:\Leoforce\arya-vis\aryavisapicore\src\Arya.Vis.Core\obj\Debug\netstandard2.0\Arya.Vis.Core.pdb
