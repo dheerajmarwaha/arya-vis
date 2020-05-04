@@ -7,11 +7,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Arya.Vis.Container.Web.Extensions
+namespace Arya.Vis.Container.Default.Extensions
 {
     public static class AryaEventBusExtension
     {
-        public static IServiceCollection AddAryaEventBus(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddAryaVisEventBus(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton<IEventBus, InMemoryEventBus>();
             services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
@@ -19,16 +19,16 @@ namespace Arya.Vis.Container.Web.Extensions
             
             return services;
         }
-        public static IEventBus SubscribeToAryaEvents(this IEventBus eventBus)
+        public static IEventBus SubscribeToAryaVisEvents(this IEventBus eventBus)
         {
             //eventBus.Subscribe<CandidateAssociatedEvent, CandidateAssociatedIntegrationEventHandler>();
             
             return eventBus;
         }
-        public static IApplicationBuilder UseAryaEventBus(this IApplicationBuilder app)
+        public static IApplicationBuilder UseAryaVisEventBus(this IApplicationBuilder app)
         {
             var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
-            eventBus.SubscribeToAryaEvents();
+            eventBus.SubscribeToAryaVisEvents();
             return app;
         }
     }

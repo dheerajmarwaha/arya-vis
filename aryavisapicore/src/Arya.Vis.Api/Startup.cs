@@ -143,7 +143,7 @@ namespace Arya.Vis.Api
 
             app.LoadCurrentUser();
 
-            app.UseAryaEventBus();
+            app.UseAryaVisEventBus();
 
             app.UseAryaVisHeaderSettings();
 
