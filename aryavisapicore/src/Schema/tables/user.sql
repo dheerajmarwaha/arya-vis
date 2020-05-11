@@ -18,7 +18,7 @@ CREATE TABLE user (
   Address2				text,
   City					varchar(1000) DEFAULT NULL,
   State					varchar(1000) DEFAULT NULL,
-  ZipCode				int(11) DEFAULT NULL,
+  ZipCode				varchar(20) DEFAULT NULL,
   Country				varchar(1000) DEFAULT NULL,
   
   

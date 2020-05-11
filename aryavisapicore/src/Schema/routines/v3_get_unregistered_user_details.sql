@@ -11,7 +11,7 @@ BEGIN
  SET @user_guid_bin = UUID_TO_BIN(vUserGuid);
 
   SELECT
-      BIN_TO_UUID(uu.UserGuId) AS UserGuId,
+      BIN_TO_UUID(uu.UserGuid) AS UserGuid,
       uu.FullName,
       uu.Email,
       uu.Phone,
@@ -24,8 +24,8 @@ BEGIN
       GROUP_CONCAT(uim.industry) as Industries
     FROM unregistered_user uu
     LEFT JOIN user_industry_mapping uim
-      ON uu.UserGuId = uim.UserGuId
-	WHERE uu.UserGuId = @user_guid_bin;
+      ON uu.UserGuid = uim.UserGuid
+	WHERE uu.UserGuid = @user_guid_bin;
 
 END
 $$

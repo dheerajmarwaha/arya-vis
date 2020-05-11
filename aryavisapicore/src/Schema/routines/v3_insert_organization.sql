@@ -160,7 +160,7 @@ BEGIN
 			@CreatedDate CreatedDate
 		)X;
 
-  SELECT @OrgGuid	AS OrgGuiD, 'Organization Successfully Created!!!'	AS ErrMsg;
+  SELECT vOrgGuid	AS OrgGuiD, 'Organization Successfully Created!!!'	AS ErrMsg;
 
   COMMIT;
 END$$

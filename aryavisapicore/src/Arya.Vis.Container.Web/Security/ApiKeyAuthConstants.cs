@@ -6,8 +6,8 @@ namespace Arya.Vis.Container.Web.Security
 {
     public class ApiKeyAuthConstants
     {
-        public const string Scheme = "AryaVisKey";
+        public const string Scheme = "AryaKey";//TODO : Need to change to AryaVisKey
 
-        public const string Policy = "AryaVisKey";
+        public const string Policy = "AryaKey";
     }
 }

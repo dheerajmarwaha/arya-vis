@@ -10,7 +10,7 @@ CREATE  PROCEDURE `v3_insert_user`(
   IN vWorkPhone VARCHAR(500),
   IN vRoleGroupID INT,
   IN vIsActive BOOL,
-  IN vOrgGuId VARCHAR(255),
+  IN vOrgGuid VARCHAR(36),
   IN vVendorID VARCHAR(100),
   IN vCity VARCHAR(25),
   IN vState VARCHAR(25),
@@ -28,18 +28,18 @@ BEGIN
   SET @ModifiedDate = UTC_TIMESTAMP();
   SET @RoleName=NULL;
   SET @orgCode = NULL;
-  SET @BINUserGuId = UUID_TO_BIN(vUserGuid);
-  SET @BINRoleGroupID = UUID_TO_BIN(vRoleGroupID);
-  SET @BINCreatedByGuId = UUID_TO_BIN(vCreatedByGuId);
+  SET @BINUserGuid = UUID_TO_BIN(vUserGuid);  
+  SET @BINCreatedByGuid = UUID_TO_BIN(vCreatedByGuId);
+  SET @BinOrgGuid = UUID_TO_BIN(vOrgGuid);
 
 
   SELECT Rolename into @RoleName from rolegroup WHERE RoleGroupId=vRoleGroupID;
-  SELECT OrgCode  INTO @orgCode  FROM mstorganization WHERE OrgGUID = vOrgGuId;
+  SELECT OrgCode  INTO @orgCode  FROM mstorganization WHERE OrgGuid = @BinOrgGuid;
 
   IF @RoleName='Super Admin' THEN
 
      INSERT INTO management_user_role(UserGuId, RoleGroupID )
-     VALUES(@BINUserGuId,  @BINRoleGroupID);
+     VALUES(@BINUserGuId,  vRoleGroupID);
      -- ON duplicate KEY UPDATE role_id = 1;
 
    ELSEIF EXISTS(SELECT 1 FROM management_user_role where UserGuId=@BINUserGuId) THEN
@@ -48,14 +48,14 @@ BEGIN
    
    END IF;
 
-  SET @Cnt = (SELECT MAX(cast(VendorId AS UNSIGNED)) FROM user WHERE OrgGuId = @vOrgGuId);
+  SET @Cnt = (SELECT MAX(cast(VendorId AS UNSIGNED)) FROM user WHERE OrgGuid = @BinOrgGuid);
   SET @Cnt = IF (@Cnt IS NULL, 1, @Cnt+1);
   SET @VendorID = IF (vVendorID IS NULL,@Cnt,vVendorID);
 
   START TRANSACTION;   
       INSERT INTO user
       (
-        `UserGuId`,
+        `UserGuid`,
         `UserName`,
         `FirstName`,
         `LastName`,
@@ -67,17 +67,17 @@ BEGIN
         `Password`,
         `RoleGroupID`,
         `IsActive`,
-        `OrgGuId`,        
-        `CreatedByGuId`,
+        `OrgGuid`,        
+        `CreatedByGuid`,
         `CreatedDate`,        
         `City`,
         `State`,
         `Country`,
-        `ZipCodeId`
+        `ZipCode`
       )
       VALUES
       (
-        vUserGuid ,
+        @BINUserGuid ,
         @Username,
         vFirstName,
         vLastName,
@@ -89,8 +89,8 @@ BEGIN
         @Passwords,
         vRoleGroupID,
         vIsActive,
-        @vOrgGuId,
-        BINCreatedByGuId,
+        @BinOrgGuid,
+        @BINCreatedByGuid,
         @CreatedDate,        
         vCity,
         vState,
@@ -114,7 +114,7 @@ BEGIN
 
 		-- END IF;
 
-      SELECT vUserGuid	AS UserGuId, 'User Successfully Created!!!'	AS ErrMsg;
+      SELECT @BINUserGuid	AS UserGuid, 'User Successfully Created!!!'	AS ErrMsg;
 
   COMMIT;
 END$$

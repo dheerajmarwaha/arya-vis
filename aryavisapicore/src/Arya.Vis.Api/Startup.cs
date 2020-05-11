@@ -13,6 +13,7 @@ using Arya.Vis.Api.Services;
 using Arya.Vis.Container.Default.Extensions;
 using Arya.Vis.Container.Web.Extensions;
 using Arya.Vis.Core.GraphQLSchema;
+using AutoMapper;
 using GraphQL;
 using GraphQL.Server;
 using GraphQL.Server.Transports.AspNetCore;
@@ -53,7 +54,9 @@ namespace Arya.Vis.Api
         {
             services.AddApiKeyAuthentication(Configuration, Environment)
                     .AddAryaAuthentication(Configuration, Environment)
-                    .AddAryaVisDefault(Configuration, Environment);
+                    .AddAryaVisDefault(Configuration, Environment)
+                    .AddAryaVisWebServices(Configuration)
+                    .AddAryaVisWebRepositories(Configuration);
 
             //register cognito service
             services.Configure<CognitoIAMCredentials>(Configuration.GetSection("AWSCognito"));
@@ -105,6 +108,9 @@ namespace Arya.Vis.Api
                         options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
                     })
                     .AddXmlDataContractSerializerFormatters();
+
+            // register AutoMapper-related services
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -147,18 +153,33 @@ namespace Arya.Vis.Api
 
             app.UseAryaVisHeaderSettings();
 
-            app.UseRouting();
+            
 
             app.UseWebSockets();
             app.UseGraphQLWebSockets<InterviewSchema>();
             app.UseGraphQL<InterviewSchema>();
 
-            app.UseAuthorization();
+           
+
+            app.UseRouting();
+
+
+             app.UseAuthorization();
+            //app.UseMvc();
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "default",
+            //        pattern: "{controller=Users}/{action=Index}/{id?}");
+            //});
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+
         }
 
         private void OnShutdown()

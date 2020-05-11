@@ -2,7 +2,7 @@ DROP view IF EXISTS `v3_view_user_details`;
 DELIMITER $$
 CREATE VIEW v3_view_user_details AS  
 SELECT
-        BIN_TO_UUID(u.UserGuId) AS UserGuId,
+        BIN_TO_UUID(u.UserGuid) AS UserGuid,
         u.UserName as FullName,
         u.VendorId,
         u.FirstName,
@@ -14,11 +14,12 @@ SELECT
         u.RoleGroupID,        
         rg.RoleName,
         BIN_TO_UUID(org.OrgGuid) AS OrgGuid,
-        org.OrganizationName,       
+        org.OrganizationName,  
+        org.OrgCode,
         u.IsActive AND org.IsActive AND org.SubscriptionEndDate >= NOW() AS IsActive,
-        BIN_TO_UUID(u.CreatedByGuId) AS CreatedByGuId,
+        BIN_TO_UUID(u.CreatedByGuid) AS CreatedByGuid,
         u.CreatedDate,
-        BIN_TO_UUID(u.ModifiedByGuId) AS ModifiedByGuId,
+        BIN_TO_UUID(u.ModifiedByGuid) AS ModifiedByGuid,
         u.ModifiedDate,
 		u.City,
         u.State,

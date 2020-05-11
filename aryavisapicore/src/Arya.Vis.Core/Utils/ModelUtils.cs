@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,7 +34,7 @@ namespace Arya.Vis.Core.Utils
             {
                 Type type = typeof(T);
                 PropertyInfo[] properties = type.GetProperties();
-
+                
                 DataTable table = row.Table;
                 T obj = (T)Activator.CreateInstance(type);
 
@@ -46,6 +48,19 @@ namespace Arya.Vis.Core.Utils
                             continue;
                         }
                         object val = row[dbColName] == DBNull.Value ? null : row[dbColName];
+
+                        if (p.PropertyType == typeof(Guid))
+                        {
+                            val = row[dbColName] == DBNull.Value ? Guid.Empty : new Guid(row.Field<String>(dbColName));
+                        }
+                        else if(p.PropertyType == typeof(Boolean))
+                        {
+                            val = Convert.ToBoolean(val);
+                        }
+                        {
+
+                        }
+                       
                         p.SetValue(obj, val);
                     }
                     catch
@@ -59,6 +74,6 @@ namespace Arya.Vis.Core.Utils
             {
                 throw;
             }
-        }
+        }  
     }
 }

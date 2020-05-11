@@ -19,7 +19,7 @@ BEGIN
         RoleGroupID,        
         RoleName,
         OrgGuid,
-        OrgName,       
+        OrganizationName,       
         IsActive,
         CreatedByGuId,
         CreatedDate,
@@ -30,6 +30,6 @@ BEGIN
         ZipCode,
         Country
       FROM v3_view_user_details
-      WHERE UserGuid=vUserGuid;  
+      WHERE UserGuid = UUID_TO_BIN(vUserGuid);  
 END$$
 DELIMITER ;

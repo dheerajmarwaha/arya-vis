@@ -2,7 +2,7 @@ DROP procedure IF EXISTS `v3_get_all_users`;
 
 DELIMITER $$
 CREATE PROCEDURE `v3_get_all_users`(
-  IN vOrgGuId VARCHAR(36),
+  IN vOrgGuid VARCHAR(36),
   IN vFrom INT,
   IN vSize INT,
   IN vSearchTerm VARCHAR(200) CHARSET utf8mb4,
@@ -11,17 +11,11 @@ CREATE PROCEDURE `v3_get_all_users`(
   IN vEmails TEXT CHARSET utf8mb4,
   IN vUserGuids TEXT)
 BEGIN
--- @Author Prashanth, Swarali
-  -- 04/05/2018
-  -- @Modified by Naveen Chandra (added IsActive = true condition)
-  -- @Modified Date: 19th Mar 2019
-  -- @Modified Date: 27th Mar 2019 Rishi
-
   SET SESSION TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
 
   SET @IsServiceRep = FALSE;
   SELECT 
-	  CASE WHEN is_enabled IS TRUE AND is_allowed IS TRUE THEN TRUE ELSE FALSE END 
+	  CASE WHEN IsEnabled IS TRUE AND IsAllowed IS TRUE THEN TRUE ELSE FALSE END 
   INTO @IsServiceRep
   FROM feature f
   JOIN org_feature_toggles oft ON oft.OrgGuId = vOrgGuid AND f.FeatureGuid = oft.FeatureGuid AND f.FeatureName = 'WhiteGloveServiceProgress';
@@ -48,68 +42,60 @@ BEGIN
   INSERT IGNORE INTO guids_temp (`guid`) SELECT split_str from temp_strs;
 
   SELECT
-		u.UserGuId,
-        u.UserName as FullName,
-        u.VendorId,
-        u.FirstName,
-        u.LastName,
-        u.HomePhone,
-        u.WorkPhone,
-        u.LoginName, 
-        u.Email,
-        u.RoleGroupID,        
-        rg.RoleName,
-        org.OrgGuid,
-        org.OrganizationName,       
-        u.IsActive AND org.IsActive AND org.SubscriptionEndDate >= NOW() AS IsActive,
-        u.CreatedByGuId,
-        u.CreatedDate,
-        u.ModifiedByGuId,
-        u.ModifiedDate,
-		u.City,
-        u.State,
-        u.ZipCode,
-        u.Country
-    FROM user u
-    JOIN rolegroup rg
-      ON rg.RoleGroupId = u.Role
-    JOIN mstorganization o
-      ON o.OrgGuId = u.OrgGuId
+        UserGuid,
+        FullName,
+        vu.VendorId,
+        FirstName,
+        LastName,
+        HomePhone,
+        WorkPhone,
+        LoginName,
+        vu.Email,
+        RoleGroupID,        
+        RoleName,
+        OrgGuid,
+        OrganizationName,       
+        IsActive,
+        CreatedByGuid,
+        CreatedDate,
+        ModifiedByGuid,
+        ModifiedDate,
+		City,
+        State,
+        ZipCode,
+        Country
+	FROM v3_view_user_details vu
     LEFT JOIN vendorId_temp vt
-      ON u.VendorId = vt.vendorId
+      ON vu.VendorId = vt.vendorId
     LEFT JOIN names_temp nt
-      ON u.UserName = nt.`name`
+      ON vu.FullName = nt.`name`
     LEFT JOIN emails_temp et
-      ON (u.Email = et.email OR u.LoginName = et.email)
+      ON (vu.Email = et.email OR vu.LoginName = et.email)
     LEFT JOIN guids_temp gt
-      ON u.UserGuid = gt.`guid`
-    WHERE (OrgGuId = vOrgGuId OR (@IsServiceRep AND (o.OrgCode = 'WhiteGloveService')))
-      AND (vSearchTerm = '' OR vSearchTerm IS NULL    OR u.UserName LIKE CONCAT('%', vSearchTerm, '%')
-			OR u.LoginName LIKE CONCAT('%', vSearchTerm, '%') OR u.Email LIKE CONCAT('%', vSearchTerm, '%'))
+      ON vu.UserGuid = gt.`guid`
+    WHERE (vu.OrgGuid = vOrgGuid OR (@IsServiceRep AND (vu.OrgCode = 'WhiteGloveService')))
+      AND (vSearchTerm = '' OR vSearchTerm IS NULL    OR vu.FullName LIKE CONCAT('%', vSearchTerm, '%')
+			OR vu.LoginName LIKE CONCAT('%', vSearchTerm, '%') OR vu.Email LIKE CONCAT('%', vSearchTerm, '%'))
       AND (vVendorIds IS NULL  OR vt.vendorId IS NOT NULL)
       AND (vNames IS NULL      OR nt.`name` IS NOT NULL)
       AND (vEmails IS NULL     OR et.email IS NOT NULL)
       AND (vUserGuids IS NULL  OR gt.`guid` IS NOT NULL)
-    ORDER BY u.IsActive DESC, UserName
+    ORDER BY vu.IsActive DESC, FullName
     LIMIT VFROM , VSIZE;
 
-  SELECT COUNT(DISTINCT UserId) AS count
-  FROM user u
-    JOIN rolegroup rg
-      ON rg.RoleGroupId = u.Role
-    JOIN mstorganization o
-      ON o.OrgGuId = u.OrgGuId
+  SELECT COUNT(DISTINCT vu.UserGuid) AS count
+  FROM v3_view_user_details vu
     LEFT JOIN vendorId_temp vt
-      ON u.VendorId = vt.vendorId
+      ON vu.VendorId = vt.vendorId
     LEFT JOIN names_temp nt
-      ON u.UserName = nt.`name`
+      ON vu.FullName = nt.`name`
     LEFT JOIN emails_temp et
-      ON (u.Email = et.email OR u.LoginName = et.email)
+      ON (vu.Email = et.email OR vu.LoginName = et.email)
     LEFT JOIN guids_temp gt
-      ON u.UserGuid = gt.`guid`
-    WHERE (OrgGuId = vOrgGuId OR (@IsServiceRep AND (o.OrgCode = 'WhiteGloveService')))
-      AND (vSearchTerm = '' OR vSearchTerm IS NULL    OR u.UserName LIKE CONCAT('%', vSearchTerm, '%')
-			OR u.LoginName LIKE CONCAT('%', vSearchTerm, '%') OR u.Email LIKE CONCAT('%', vSearchTerm, '%'))
+      ON vu.UserGuid = gt.`guid`
+    WHERE (vu.OrgGuid = vOrgGuid OR (@IsServiceRep AND (vu.OrgCode = 'WhiteGloveService')))
+      AND (vSearchTerm = '' OR vSearchTerm IS NULL    OR vu.FullName LIKE CONCAT('%', vSearchTerm, '%')
+			OR vu.LoginName LIKE CONCAT('%', vSearchTerm, '%') OR vu.Email LIKE CONCAT('%', vSearchTerm, '%'))
       AND (vVendorIds IS NULL  OR vt.vendorId IS NOT NULL)
       AND (vNames IS NULL      OR nt.`name` IS NOT NULL)
       AND (vEmails IS NULL     OR et.email IS NOT NULL)

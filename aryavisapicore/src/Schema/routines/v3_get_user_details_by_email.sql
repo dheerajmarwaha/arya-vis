@@ -7,7 +7,7 @@ CREATE PROCEDURE `v3_get_user_details_by_email`
 BEGIN
 	SET SESSION TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
     SELECT
-        UserGuId,
+        UserGuid,
         FullName,
         VendorId,
         FirstName,
@@ -19,11 +19,11 @@ BEGIN
         RoleGroupID,        
         RoleName,
         OrgGuid,
-        OrgName,       
+        OrganizationName,       
         IsActive,
-        CreatedByGuId,
+        CreatedByGuid,
         CreatedDate,
-        ModifiedByGuId,
+        ModifiedByGuid,
         ModifiedDate,
 		City,
         State,

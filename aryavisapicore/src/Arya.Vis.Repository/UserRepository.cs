@@ -57,7 +57,7 @@ namespace Arya.Vis.Repository
                     {
                         Users = await ReadUsersAsync(reader)
                     };
-                    await SqlProvider.NextResultAsync(reader);
+
                     await SqlProvider.ReadAsync(reader);
                     users.Total = (int)await SqlProvider.GetFieldValueAsync<Int64>(reader, "count");
                     return users;
@@ -221,24 +221,24 @@ namespace Arya.Vis.Repository
             using(reader) {
                 if (await SqlProvider.ReadAsync(reader)) {
                     user = new UnregisteredUser {
-                        UserGuid = await SqlProvider.GetFieldValueAsync<Guid>(reader, "user_guid"),
-                        FullName = await SqlProvider.GetFieldValueAsync<string>(reader, "full_name"),
-                        Email = await SqlProvider.GetFieldValueAsync<string>(reader, "email"),
-                        Phone = await SqlProvider.GetFieldValueAsync<string>(reader, "phone"),
-                        City = await SqlProvider.GetFieldValueAsync<string>(reader, "city"),
-                        StateCode = await SqlProvider.GetFieldValueAsync<string>(reader, "state_code"),
-                        PostalCode = await SqlProvider.GetFieldValueAsync<string>(reader, "postal_code"),
-                        Company = await SqlProvider.GetFieldValueAsync<string>(reader, "company")
+                        UserGuid = await SqlProvider.GetFieldValueAsync<Guid>(reader, "UserGuid"),
+                        FullName = await SqlProvider.GetFieldValueAsync<string>(reader, "FullName"),
+                        Email = await SqlProvider.GetFieldValueAsync<string>(reader, "Email"),
+                        Phone = await SqlProvider.GetFieldValueAsync<string>(reader, "Phone"),
+                        City = await SqlProvider.GetFieldValueAsync<string>(reader, "City"),
+                        StateCode = await SqlProvider.GetFieldValueAsync<string>(reader, "StateCode"),
+                        PostalCode = await SqlProvider.GetFieldValueAsync<string>(reader, "PostalCode"),
+                        Company = await SqlProvider.GetFieldValueAsync<string>(reader, "Company")
                     };
-                    var countryCode = await SqlProvider.GetFieldValueAsync<string>(reader, "country_code");
+                    var countryCode = await SqlProvider.GetFieldValueAsync<string>(reader, "CountryCode");
                     if (!string.IsNullOrWhiteSpace(countryCode)) {
                         user.CountryCode = countryCode;
                     }
-                    var industries = await SqlProvider.GetFieldValueAsync<string>(reader, "industries");
+                    var industries = await SqlProvider.GetFieldValueAsync<string>(reader, "Industries");
                     if (!string.IsNullOrWhiteSpace(industries)) {
                         user.Industries = industries.Split(',');
                     }
-                    var profileType = await SqlProvider.GetFieldValueAsync<string>(reader, "profile_type");
+                    var profileType = await SqlProvider.GetFieldValueAsync<string>(reader, "ProfileType");
                     if (!string.IsNullOrWhiteSpace(profileType)) {
                         user.ProfileType = EnumUtils.GetEnum<ProfileType>(profileType, "ProfileType");
                     }
@@ -286,10 +286,10 @@ namespace Arya.Vis.Repository
                 var userguids = new List<Guid>(query.UserGuids);
                 if (userguids.Count > 0) { query.Size = userguids.Count; }
             }
-            SqlProvider.AddParameterWithValue(command, "vSearchTerm", query.SearchTerm);
             SqlProvider.AddParameterWithValue(command, "vOrgGuId", orgGuid);
             SqlProvider.AddParameterWithValue(command, "vFrom", query.From);
             SqlProvider.AddParameterWithValue(command, "vSize", query.Size);
+            SqlProvider.AddParameterWithValue(command, "vSearchTerm", query.SearchTerm);
             SqlProvider.AddParameterWithValue(command, "vVendorIds", query.VendorIds == null ? null : string.Join(",", query.VendorIds));
             SqlProvider.AddParameterWithValue(command, "vNames", query.Names == null ? null : string.Join(",", query.Names));
             SqlProvider.AddParameterWithValue(command, "vEmails", query.Emails == null ? null : string.Join(",", query.Emails));

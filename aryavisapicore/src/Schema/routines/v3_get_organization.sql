@@ -29,7 +29,7 @@ BEGIN
 		JOIN temp_strs B ON A.CountryId = B.split_str;
 
   SELECT    
-		Org.OrgGuid,
+		vOrgGuid,
 		OrganizationName,
 		ContactPerson,
 		CPEmail AS ContactEmail,

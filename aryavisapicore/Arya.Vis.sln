@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Exceptions", "..\..\ar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.ServiceBus", "..\..\Arya.ServiceBus\src\Arya.ServiceBus\Arya.ServiceBus.csproj", "{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arya.Vis.Service.IntegrationHandler", "Arya.Vis.Service.IntegrationHandler\Arya.Vis.Service.IntegrationHandler.csproj", "{2DA61440-E8B1-41FB-921F-46CBE6376632}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,18 @@ Global
 		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|x64.Build.0 = Release|Any CPU
 		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|x86.ActiveCfg = Release|Any CPU
 		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742}.Release|x86.Build.0 = Release|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Debug|x64.Build.0 = Debug|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Debug|x86.Build.0 = Debug|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Release|x64.ActiveCfg = Release|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Release|x64.Build.0 = Release|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Release|x86.ActiveCfg = Release|Any CPU
+		{2DA61440-E8B1-41FB-921F-46CBE6376632}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -217,6 +231,7 @@ Global
 		{CC21B115-D4C6-475A-B0C2-3E2A70D70857} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
 		{B7063240-EEB6-48FE-A978-E5BD3FE7661D} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
 		{C5B5C68C-0DF2-4E6B-A67A-CA3EEAC21742} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
+		{2DA61440-E8B1-41FB-921F-46CBE6376632} = {5219CA9A-5757-49CE-9B2B-7C67A6974929}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76146101-51D1-4C0D-B256-A6014577073B}

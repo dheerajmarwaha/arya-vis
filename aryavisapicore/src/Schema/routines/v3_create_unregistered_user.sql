@@ -27,7 +27,7 @@ BEGIN
   IF NOT EXISTS ( SELECT 1  FROM unregistered_user   WHERE Email = vEmail )  THEN
     INSERT INTO unregistered_user
     (
-		UserGuId,
+		UserGuid,
 		FullName,
 		Email,
 		Phone,
@@ -36,8 +36,7 @@ BEGIN
 		PostalCode,
 		CountryCode,
 		Company,
-		ProfileType,
-		CreatedDate
+		ProfileType		
     )
     VALUES (
 		@user_guid_bin,
@@ -54,7 +53,7 @@ BEGIN
 
 
     INSERT INTO user_industry_mapping (
-    UserGuId,
+    UserGuid,
     Industry
     )
     SELECT
