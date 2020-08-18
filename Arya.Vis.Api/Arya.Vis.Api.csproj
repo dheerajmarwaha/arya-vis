@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+   <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arya.Vis.Core\Arya.Vis.Core.csproj" />
+    <ProjectReference Include="..\Arya.Vis.Container.Default\Arya.Vis.Container.Default.csproj" />
+    <ProjectReference Include="..\Arya.Vis.Container.Web\Arya.Vis.Container.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HotChocolate.AspNetCore" Version="10.4.3" />
+
+  </ItemGroup>
+
+</Project>
